@@ -139,6 +139,8 @@ let Tlist_File_Fold_Auto_Close = 1
 "let Tlist_Show_Menu = 1
 
 nnoremap <silent> <F2>		:wa<Bar>exe "mksession! " . v:this_session<CR>
+nnoremap <silent> <C-n>		gt
+nnoremap <silent> <C-p>		gT
 nnoremap <silent> <C-F12>	:!exctags -R --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 nnoremap <silent> <Leader>as	:AS<CR>
 nnoremap <silent> <Leader>w	:w!<CR>
@@ -147,5 +149,6 @@ nnoremap <silent> <Leader>x	:x!<CR>
 nnoremap <silent> <Leader>xa	:xa!<CR>
 nnoremap <silent> <Leader>q	:q!<CR>
 nnoremap <silent> <Leader>qa	:qa!<CR>
+nnoremap <silent> <Leader>bd	:bd!<CR>
 nnoremap <silent> <Leader>nh	:noh<CR>
 nnoremap <silent> <Leader>tl	:TlistToggle<CR>
