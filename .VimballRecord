@@ -1,1 +1,2 @@
 SudoEdit.vba: call delete('/home/jochen/.vim/plugin/SudoEdit.vim')|call delete('/home/jochen/.vim/doc/SudoEdit.txt')
+haskellmode-20090430.vba: call delete('/home/jochen/.vim/compiler/ghc.vim')|call delete('/home/jochen/.vim/ftplugin/haskell.vim')|call delete('/home/jochen/.vim/ftplugin/haskell_doc.vim')|call delete('/home/jochen/.vim/ftplugin/haskell_hpaste.vim')|call delete('/home/jochen/.vim/autoload/haskellmode.vim')|call delete('/home/jochen/.vim/doc/haskellmode.txt')

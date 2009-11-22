@@ -138,6 +138,8 @@ let g:bufExplorerSortBy='name'       " Sort by the buffer's name.
 let Tlist_File_Fold_Auto_Close = 1
 "let Tlist_Show_Menu = 1
 
+let g:haddock_browser="/usr/bin/firefox"
+
 nnoremap <silent> <F2>		:wa<Bar>exe "mksession! " . v:this_session<CR>
 nnoremap <silent> <C-n>		gt
 nnoremap <silent> <C-p>		gT
