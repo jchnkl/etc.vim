@@ -143,7 +143,7 @@ let g:haddock_browser="/usr/bin/firefox"
 nnoremap <silent> <F2>		:wa<Bar>exe "mksession! " . v:this_session<CR>
 nnoremap <silent> <C-n>		gt
 nnoremap <silent> <C-p>		gT
-nnoremap <silent> <C-F12>	:!exctags -R --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
+nnoremap <silent> <C-F12>	:!ctags -R --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 nnoremap <silent> <Leader>as	:AS<CR>
 nnoremap <silent> <Leader>w	:w!<CR>
 nnoremap <silent> <Leader>wa	:wa!<CR>
