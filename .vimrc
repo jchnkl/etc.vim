@@ -6,7 +6,7 @@ set backspace=indent,eol,start	" more powerful backspacing
 
 " Now we set some defaults for the editor 
 set autoindent		" always set autoindenting on
-set textwidth=72		" Don't wrap words by default
+set textwidth=0		" Don't wrap words by default
 "set backup		" keep a backup file
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more than
 			" 50 lines of registers
