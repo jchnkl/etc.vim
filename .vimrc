@@ -138,6 +138,10 @@ let g:haddock_browser="/usr/bin/firefox"
 let g:haddock_docdir="/usr/share/doc/ghc/html"
 au BufEnter *.hs compiler ghc
 
+au BufEnter *.tex setlocal spell
+au BufEnter *.tex setlocal spelllang=de
+au BufEnter *.tex setlocal textwidth=72
+
 nnoremap <silent> <F2>		:wa<Bar>exe "mksession! " . v:this_session<CR>
 nnoremap <silent> <C-n>		gt
 nnoremap <silent> <C-p>		gT
