@@ -56,6 +56,10 @@ set incsearch		" Incremental search
 set smartcase		" ignore ic when pattern contains uppercase
 set autowrite		" Automatically save before commands like :next and :make
 
+set expandtab
+set shiftwidth=2
+set softtabstop=2
+
 filetype on
 filetype indent on
 filetype plugin on
