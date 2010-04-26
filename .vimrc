@@ -66,8 +66,6 @@ filetype plugin on
 set nu
 set cul
 
-set t_Co=256
-
 set foldmethod=syntax
 set foldcolumn=2
 
