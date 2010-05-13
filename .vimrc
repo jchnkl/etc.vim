@@ -81,44 +81,24 @@ au BufWinLeave *.c mkview
 au BufWinLeave *.h mkview
 au BufWinEnter *.c silent loadview
 au BufWinEnter *.h silent loadview
-"if !has("gui_running")
-"	colorscheme inkpot
-"endif
 
 let g:zenburn_high_Contrast = 1
 colorscheme zenburn
 
-"if has("gui_running")
-"	let g:zenburn_high_Contrast = 1
-"	colorscheme zenburn
-	if has("gui_gtk2")
-		set gfn=Bitstream\ Vera\ Sans\ Mono\ 12
-	endif
-"else
-"	colorscheme desert
-"endif
+if has("gui_gtk2")
+  set gfn=Bitstream\ Vera\ Sans\ Mono\ 12
+endif
 
 scriptencoding utf-8
 set encoding=utf-8
 
 language en_US.UTF-8
 
-"let OmniCpp_ShowScopeInAbbr = 1
 let OmniCpp_ShowPrototypeInAbbr = 1
 
 set path=.,/usr/include/**,/usr/local/include/**
-"set path+=~/.vim/c++/**
-"set tags+=~/.vim/tags/stl
-"set tags+=~/.vim/tags/tags
-"set path+=~/.vim/include/c++/4.2/**
-"set tags+=~/.vim/include/c++/tags
-"set path+=/usr/include/c++/4.2/**
-"set path+=/usr/local/include/**
-"set path+=/usr/include/**
-"set path+=~/.vim/tags/cpp_src
 "let OmniCpp_NamespaceSearch = 1
 let OmniCpp_DefaultNamespaces = ["std", "_GLIBCXX_STD"]
-"set completeopt=menuone,menu,longest,preview
 set tags+=~/.vim/tags/tags
 
 "autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
