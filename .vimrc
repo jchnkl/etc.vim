@@ -131,6 +131,8 @@ au BufEnter *.tex setlocal spell
 au BufEnter *.tex setlocal spelllang=de
 au BufEnter *.tex setlocal textwidth=72
 
+set guioptions=afgirL
+
 imap     <silent> <S-Insert>    <MiddleMouse>
 nnoremap <silent> <S-Insert>	"*p
 nnoremap <silent> <F2>		:wa<Bar>exe "mksession! " . v:this_session<CR>
