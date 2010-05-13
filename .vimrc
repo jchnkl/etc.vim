@@ -1,4 +1,7 @@
 " Configuration file for vim
+" for os specific settings; strip newline
+let os = substitute(system('uname -s'),"\n","","")
+
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
 set nocompatible	" Use Vim defaults instead of 100% vi compatibility
@@ -113,9 +116,15 @@ let g:bufExplorerSortBy='name'       " Sort by the buffer's name.
 let Tlist_File_Fold_Auto_Close = 1
 "let Tlist_Show_Menu = 1
 
+if os == 'FreeBSD'
+  let g:haddock_browser="/usr/local/bin/firefox3"
+  let g:haddock_docdir="/usr/local/share/doc/ghc-6.10.4"
+elseif os == 'Linux'
+  let g:haddock_browser="/usr/bin/firefox"
+  let g:haddock_docdir="/usr/share/doc/ghc/html"
+endif
+
 "haskelmode settings
-let g:haddock_browser="/usr/bin/firefox"
-let g:haddock_docdir="/usr/share/doc/ghc/html"
 au BufEnter *.hs compiler ghc
 
 au BufEnter *.tex setlocal spell
