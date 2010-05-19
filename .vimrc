@@ -131,7 +131,7 @@ au BufEnter *.tex setlocal spell
 au BufEnter *.tex setlocal spelllang=de
 au BufEnter *.tex setlocal textwidth=72
 
-set guioptions=afgirL
+set guioptions=acfgirL
 
 imap     <silent> <S-Insert>    <MiddleMouse>
 nnoremap <silent> <S-Insert>	"*p
