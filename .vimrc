@@ -89,7 +89,7 @@ let g:zenburn_high_Contrast = 1
 colorscheme zenburn
 
 if has("gui_gtk2")
-  set gfn=Bitstream\ Vera\ Sans\ Mono\ 12
+  set gfn=Monospace\ 12
 endif
 
 scriptencoding utf-8
