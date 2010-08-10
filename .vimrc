@@ -63,6 +63,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+set mousehide           " already enabled by default; just to remember
+
 filetype on
 filetype indent on
 filetype plugin on
