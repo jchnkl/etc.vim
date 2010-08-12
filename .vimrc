@@ -85,7 +85,7 @@ au BufWinLeave *.h mkview
 au BufWinEnter *.c silent loadview
 au BufWinEnter *.h silent loadview
 
-let g:zenburn_high_Contrast = 1
+let g:zenburn_high_Contrast = 0
 colorscheme zenburn
 
 if has("gui_gtk2")
