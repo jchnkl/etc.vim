@@ -122,6 +122,7 @@ if os == 'FreeBSD'
 elseif os == 'Linux'
   let g:haddock_browser="/usr/bin/firefox"
   let g:haddock_docdir="/usr/share/doc/ghc/html"
+  let g:EclimEclipseHome = '/usr/share/eclipse'
 endif
 
 "haskelmode settings
