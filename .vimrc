@@ -63,6 +63,8 @@ set expandtab
 set shiftwidth=2
 set softtabstop=2
 
+set mousehide           " already enabled by default; just to remember
+
 filetype on
 filetype indent on
 filetype plugin on
@@ -89,7 +91,7 @@ let g:zenburn_high_Contrast = 0
 colorscheme zenburn
 
 if has("gui_gtk2")
-  set gfn=Bitstream\ Vera\ Sans\ Mono\ 12
+  set gfn=Monospace\ 12
 endif
 
 scriptencoding utf-8
