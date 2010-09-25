@@ -127,6 +127,8 @@ elseif os == 'Linux'
   let g:EclimEclipseHome = '/usr/share/eclipse'
 endif
 
+let g:SuperTabDefaultCompletionType = 'context'
+
 "haskelmode settings
 au BufEnter *.hs compiler ghc
 
@@ -135,6 +137,9 @@ au BufEnter *.tex setlocal spelllang=de
 au BufEnter *.tex setlocal textwidth=72
 
 set guioptions=acfgirL
+
+"local printer
+set printdevice=hplj4l
 
 imap     <silent> <S-Insert>    <MiddleMouse>
 nnoremap <silent> <S-Insert>	"*p
@@ -154,3 +159,7 @@ nnoremap <silent> <Leader>bd	:bd!<CR>
 nnoremap <silent> <Leader>nh	:noh<CR>
 nnoremap <silent> <Leader>tl	:TlistToggle<CR>
 nnoremap <silent> <Leader>sc	:tabe<CR>:setlocal buftype=nofile<CR>:setlocal bufhidden=hide<CR>:setlocal nobuflisted<CR>:setlocal noswapfile<CR>
+
+abbreviate mfg Mit freundlichen Grüßen,
+abbreviate vg Viele Grüße,
+abbreviate jrk Jochen Keil
