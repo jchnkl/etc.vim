@@ -127,6 +127,8 @@ elseif os == 'Linux'
   let g:EclimEclipseHome = '/usr/share/eclipse'
 endif
 
+let g:SuperTabDefaultCompletionType = 'context'
+
 "haskelmode settings
 au BufEnter *.hs compiler ghc
 
