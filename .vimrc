@@ -181,6 +181,7 @@ nnoremap <silent> <Leader>nh	:noh<CR>
 nnoremap <silent> <Leader>tl	:TlistToggle<CR>
 nnoremap <silent> <Leader>sc	:tabe<CR>:setlocal buftype=nofile<CR>:setlocal bufhidden=hide<CR>:setlocal nobuflisted<CR>:setlocal noswapfile<CR>
 
-abbreviate mfg Mit freundlichen Grüßen,
-abbreviate vg Viele Grüße,
+abbreviate mfg Mit freundlichen Grüßen
+abbreviate vg Viele Grüße
+abbreviate jr Jochen
 abbreviate jrk Jochen Keil
