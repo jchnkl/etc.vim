@@ -157,7 +157,7 @@ let vala_no_tab_space_error = 1
 " Minimum lines used for comment syncing (default 50)
 "let vala_minlines = 120
 
-set guioptions=acfgirL
+set guioptions=acgirL
 
 "local printer
 set printdevice=hplj4l
