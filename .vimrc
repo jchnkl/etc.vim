@@ -84,9 +84,6 @@ set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver
 "text files.
 set modeline
 
-" keep current directory as pwd when using S/T/Explore
-let g:netrw_keepdir=0
-
 au BufWinLeave *.c mkview
 au BufWinLeave *.h mkview
 au BufWinEnter *.c silent loadview
