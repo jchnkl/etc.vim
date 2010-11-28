@@ -65,6 +65,8 @@ set softtabstop=2
 
 set mousehide           " already enabled by default; just to remember
 
+set title titlestring=vi:%t
+
 filetype on
 filetype indent on
 filetype plugin on
