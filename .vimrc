@@ -129,6 +129,7 @@ elseif os == 'Linux'
   let g:EclimEclipseHome = '/usr/share/eclipse'
 endif
 
+" supertab
 let g:SuperTabDefaultCompletionType = 'context'
 
 "haskelmode settings
