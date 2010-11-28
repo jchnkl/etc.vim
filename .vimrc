@@ -168,6 +168,21 @@ set guioptions=acgirL
 "local printer
 set printdevice=hplj4l
 
+function! LoadSession()
+  if filereadable("Session.vim")
+    source Session.vim
+  endif
+endfunction
+
+function! SaveSession() "only save session if there exists one already
+  if filereadable("Session.vim")
+    mksession! Session.vim
+  endif
+endfunction
+
+"autocmd VimEnter * call LoadSession()
+autocmd VimLeave * call SaveSession()
+
 imap     <silent> <S-Insert>    <MiddleMouse>
 nnoremap <silent> <S-Insert>	"*p
 nnoremap <silent> <F2>		:wa<Bar>exe "mksession! " . v:this_session<CR>
