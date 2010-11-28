@@ -171,6 +171,8 @@ set guioptions=acgirL
 "local printer
 set printdevice=hplj4l
 
+set ssop-=options "do not store global and local values in a session
+
 function! LoadSession()
   if filereadable("Session.vim")
     source Session.vim
