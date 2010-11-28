@@ -132,6 +132,9 @@ endif
 " supertab
 let g:SuperTabDefaultCompletionType = 'context'
 
+" vimlatex
+let g:Tex_SmartKeyQuote=0
+
 "haskelmode settings
 au BufEnter *.hs compiler ghc
 
