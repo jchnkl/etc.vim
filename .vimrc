@@ -200,8 +200,7 @@ nnoremap <silent> <Leader>qa	:qa!<CR>
 nnoremap <silent> <Leader>bd	:bd!<CR>
 nnoremap <silent> <Leader>nh	:noh<CR>
 nnoremap <silent> <Leader>tl	:TlistToggle<CR>
-nnoremap <silent> <Leader>sd	:setlocal spell<CR>:setlocal spelllang=de<CR>
-nnoremap <silent> <Leader>se	:setlocal spell<CR>:setlocal spelllang=en<CR>
+nnoremap <silent> <Leader>s	:setlocal spell<CR>:setlocal spelllang=de_20,en<CR>
 nnoremap <silent> <Leader>sc	:tabe<CR>:setlocal buftype=nofile<CR>:setlocal bufhidden=hide<CR>:setlocal nobuflisted<CR>:setlocal noswapfile<CR>
 
 abbreviate mfg Mit freundlichen Grüßen
