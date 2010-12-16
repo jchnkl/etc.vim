@@ -137,7 +137,7 @@ let g:SuperTabDefaultCompletionType = 'context'
 " vimlatex
 let g:Tex_SmartKeyQuote=0
 
-"haskelmode settings
+"haskellmode settings
 au BufEnter *.hs compiler ghc
 
 au BufEnter *.tex setlocal spell
