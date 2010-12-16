@@ -185,10 +185,6 @@ endfunction
 "autocmd VimEnter * call LoadSession()
 autocmd VimLeave * call SaveSession()
 
-" change global directory to basename of current file
-cmap     <silent>cdg cd %:h<CR>
-" change current buffer directory to basename of current file
-cmap     <silent>cdl lcd %:h<CR>
 imap     <silent> <S-Insert>    <MiddleMouse>
 nnoremap <silent> <S-Insert>	"*p
 nnoremap <silent> <F2>		:wa<Bar>exe "mksession! " . v:this_session<CR>
@@ -205,6 +201,10 @@ nnoremap <silent> <Leader>q	:q!<CR>
 nnoremap <silent> <Leader>qa	:qa!<CR>
 nnoremap <silent> <Leader>bd	:bd!<CR>
 nnoremap <silent> <Leader>nh	:noh<CR>
+" change global directory to basename of current file
+nnoremap <silent> <Leader>c     :cd %:h<CR>
+" change current buffer directory to basename of current file
+nnoremap <silent> <Leader>lc    :lcd %:h<CR>
 nnoremap <silent> <Leader>tl	:TlistToggle<CR>
 nnoremap <silent> <Leader>s	:setlocal spell<CR>:setlocal spelllang=de_20,en<CR>
 nnoremap <silent> <Leader>sc	:tabe<CR>:setlocal buftype=nofile<CR>:setlocal bufhidden=hide<CR>:setlocal nobuflisted<CR>:setlocal noswapfile<CR>
