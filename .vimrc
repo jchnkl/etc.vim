@@ -139,6 +139,8 @@ let g:Tex_SmartKeyQuote=0
 
 "haskellmode settings
 au BufEnter *.hs compiler ghc
+" set indendation to 4 blanks for haskell files
+autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4
 
 au BufEnter *.tex setlocal spell
 au BufEnter *.tex setlocal spelllang=de
