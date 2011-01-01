@@ -9,7 +9,7 @@ set backspace=indent,eol,start	" more powerful backspacing
 
 " Now we set some defaults for the editor 
 set autoindent		" always set autoindenting on
-set textwidth=0		" Don't wrap words by default
+set textwidth=80	" textwidth 80 is quite common
 "set backup		" keep a backup file
 set viminfo='20,\"50	" read/write a .viminfo file, don't store more than
 			" 50 lines of registers
@@ -142,7 +142,6 @@ au BufEnter *.hs compiler ghc
 
 au BufEnter *.tex setlocal spell
 au BufEnter *.tex setlocal spelllang=de
-au BufEnter *.tex setlocal textwidth=72
 
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
