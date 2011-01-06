@@ -138,6 +138,16 @@ let g:SuperTabContextTextOmniPrecedence = ['&omnifunc', '&completefunc']
 let g:SuperTabContextDiscoverDiscovery =
     \ ["&completefunc:<c-x><c-u>", "&omnifunc:<c-x><c-o>"]
 
+" always set spelllang
+set spelllang=de_20,en
+
+" mail
+autocmd FileType mail setlocal textwidth=72
+autocmd FileType mail setlocal spell
+
+" latex
+autocmd FileType plaintex setlocal spell
+
 " vimlatex
 let g:Tex_SmartKeyQuote=0
 
@@ -145,9 +155,6 @@ let g:Tex_SmartKeyQuote=0
 au BufEnter *.hs compiler ghc
 " set indendation to 4 blanks for haskell files
 autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4
-
-au BufEnter *.tex setlocal spell
-au BufEnter *.tex setlocal spelllang=de
 
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
