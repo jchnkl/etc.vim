@@ -158,8 +158,8 @@ autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4
 
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
-au BufRead,BufNewFile *.vala setfiletype vala
-au BufRead,BufNewFile *.vapi setfiletype vala
+autocmd BufRead,BufNewFile *.vala setfiletype vala
+autocmd BufRead,BufNewFile *.vapi setfiletype vala
 
 " Disable valadoc syntax highlight
 "let vala_ignore_valadoc = 1
