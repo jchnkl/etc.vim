@@ -204,7 +204,7 @@ nnoremap <silent> <C-n>		gt
 nnoremap <silent> <C-p>		gT
 nnoremap <silent> <C-F12>	:!ctags -R --languages=c++ --c++-kinds=+p --fields=+iaS --extra=+q .<CR>
 nnoremap <silent> <Leader>as	:AS<CR>
-nnoremap <silent> <Leader>b	:b#<CR>
+nnoremap <silent> <Leader>a	:b#<CR>
 nnoremap <silent> <Leader>w	:w!<CR>
 nnoremap <silent> <Leader>wa	:wa!<CR>
 nnoremap <silent> <Leader>x	:x!<CR>
