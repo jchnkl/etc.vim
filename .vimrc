@@ -147,6 +147,8 @@ autocmd FileType mail setlocal spell
 
 " latex
 autocmd FileType plaintex setlocal spell
+autocmd FileType plaintex set grepprg=grep\ -nH\ $*
+autocmd FileType plaintex let g:tex_flavor = "latex"
 
 " vimlatex
 let g:Tex_SmartKeyQuote=0
