@@ -154,6 +154,7 @@ autocmd FileType plaintex let g:tex_flavor = "latex"
 let g:Tex_SmartKeyQuote=0
 
 "haskellmode settings
+let g:haddock_indexfiledir = expand("~") . "/" . ".vim"
 autocmd FileType haskell compiler ghc
 " set indendation to 4 blanks for haskell files
 autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4
