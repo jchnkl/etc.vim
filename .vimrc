@@ -158,6 +158,8 @@ let g:haddock_indexfiledir = expand("~") . "/" . ".vim"
 autocmd FileType haskell compiler ghc
 " set indendation to 4 blanks for haskell files
 autocmd FileType haskell setlocal shiftwidth=4 softtabstop=4
+autocmd FileType haskell let b:ghc_staticoptions = "-i" . expand("~") . "/" . ".xmonad/lib"
+autocmd FileType haskell lcd %:h
 
 autocmd BufRead *.vala set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
 autocmd BufRead *.vapi set efm=%f:%l.%c-%[%^:]%#:\ %t%[%^:]%#:\ %m
