@@ -93,7 +93,7 @@ au BufWinEnter *.h silent loadview
 colorscheme zenburn
 
 if has("gui_gtk2")
-  set gfn=Monospace\ 12
+  set gfn=Inconsolata\ 12
 endif
 
 scriptencoding utf-8
