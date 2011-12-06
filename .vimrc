@@ -90,7 +90,7 @@ au BufWinEnter *.c silent loadview
 au BufWinEnter *.h silent loadview
 
 "let g:zenburn_high_Contrast = 1
-colorscheme zenburn
+colorscheme solarized
 
 if has("gui_gtk2")
   set gfn=Terminus\ 12
