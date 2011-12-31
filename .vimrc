@@ -60,8 +60,8 @@ set smartcase		" ignore ic when pattern contains uppercase
 set autowrite		" Automatically save before commands like :next and :make
 
 set expandtab
-set shiftwidth=2
-set softtabstop=2
+set shiftwidth=4
+set softtabstop=4
 
 set mousehide           " already enabled by default; just to remember
 
