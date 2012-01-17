@@ -58,6 +58,12 @@ set ignorecase		" Do case insensitive matching
 set incsearch		" Incremental search
 set smartcase		" ignore ic when pattern contains uppercase
 set autowrite		" Automatically save before commands like :next and :make
+" set autoread		" file changed outside of Vim -> read it again
+
+" Check if any buffers were changed outside of Vim
+autocmd WinEnter * checktime
+autocmd CursorHold * checktime
+let v:fcs_choice = "ask"
 
 set expandtab
 set shiftwidth=4
