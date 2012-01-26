@@ -63,6 +63,7 @@ set autowrite		" Automatically save before commands like :next and :make
 " Check if any buffers were changed outside of Vim
 autocmd WinEnter * checktime
 autocmd CursorHold * checktime
+autocmd InsertEnter * checktime
 let v:fcs_choice = "ask"
 
 set expandtab
