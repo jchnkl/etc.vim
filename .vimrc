@@ -65,6 +65,8 @@ set autowrite		" Automatically save before commands like :next and :make
 autocmd WinEnter * checktime
 autocmd CursorHold * checktime
 autocmd InsertEnter * checktime
+au CmdwinEnter * let b:ei_save = &eventignore | set eventignore=CursorHold,InsertEnter
+au CmdwinLeave * let &eventignore = b:ei_save
 let v:fcs_choice = "ask"
 
 set expandtab
