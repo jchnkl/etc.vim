@@ -19,6 +19,7 @@ set hlsearch
 set linebreak
 set wrap
 set shell=sh
+set scrolloff=5		" show 5 lines of offset at top/bottom
 
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
