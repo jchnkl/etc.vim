@@ -238,6 +238,14 @@ nnoremap <silent> <Leader>tl	:TlistToggle<CR>
 nnoremap <silent> <Leader>s	:setlocal spell<CR>:setlocal spelllang=de_20,en<CR>
 nnoremap <silent> <Leader>sc	:tabe<CR>:setlocal buftype=nofile<CR>:setlocal bufhidden=hide<CR>:setlocal nobuflisted<CR>:setlocal noswapfile<CR>
 
+" center search results
+nnoremap n nzz
+nnoremap N Nzz
+nnoremap * *zz
+nnoremap # #zz
+nnoremap g* g*zz
+nnoremap g# g#zz
+
 autocmd FileType mail abbreviate mfg Mit freundlichen Grüßen
 autocmd FileType mail abbreviate vg Viele Grüße
 autocmd FileType mail abbreviate jr Jochen
