@@ -233,6 +233,7 @@ nnoremap <silent> <Leader>q	:q!<CR>
 nnoremap <silent> <Leader>qa	:qa!<CR>
 nnoremap <silent> <Leader>bd	:bd!<CR>
 nnoremap <silent> <Leader>nh	:noh<CR>
+nnoremap <silent> <Leader>cc	:wa!<CR>:VCSCommit<CR>
 " change global directory to basename of current file
 nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
@@ -248,6 +249,9 @@ nnoremap * *zz
 nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
+
+" plugins/ghf.vim
+map <silent> ghf :call OpenHaskellFile()<CR>
 
 autocmd FileType mail abbreviate mfg Mit freundlichen Grüßen
 autocmd FileType mail abbreviate vg Viele Grüße
