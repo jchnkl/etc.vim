@@ -1,8 +1,8 @@
 function! OpenHaskellFile()
-  let f = tr(matchstr(getline(line('.')), 'import \zs[A-Za-z0-9.]\+'), ".", "/") . ".hs"
+  let f = tr(matchstr(getline(line('.')), '\(import\s*qualified\|import\)\s*\zs[A-Za-z0-9.]\+'), ".", "/") . ".hs"
   if f == ".hs"
      echohl ErrorMsg
-     echo "Not on an import line!"
+     echo "Not on a valid import line!"
      echohl NONE
      return
   endif
@@ -20,3 +20,4 @@ function! OpenHaskellFile()
      echohl NONE
   endif
 endfunction
+:map <silent> ghf :call OpenHaskellFile()<CR>
