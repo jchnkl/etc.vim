@@ -249,6 +249,9 @@ nnoremap # #zz
 nnoremap g* g*zz
 nnoremap g# g#zz
 
+" plugins/ghf.vim
+map <silent> ghf :call OpenHaskellFile()<CR>
+
 autocmd FileType mail abbreviate mfg Mit freundlichen Grüßen
 autocmd FileType mail abbreviate vg Viele Grüße
 autocmd FileType mail abbreviate jr Jochen
