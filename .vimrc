@@ -106,6 +106,8 @@ au BufWinEnter *.h silent loadview
 colorscheme solarized
 set background=dark
 
+highlight Comment cterm=italic
+
 if has("gui_gtk2")
   set gfn=Terminus\ 12
 endif
