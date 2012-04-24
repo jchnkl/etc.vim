@@ -17,7 +17,7 @@ set history=50		" keep 50 lines of command line history
 set ruler		" show the cursor position all the time
 set hlsearch
 set linebreak
-set wrap
+set nowrap		" no wrap!
 set shell=sh
 set scrolloff=5		" show 5 lines of offset at top/bottom
 
