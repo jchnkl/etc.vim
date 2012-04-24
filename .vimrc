@@ -20,6 +20,8 @@ set linebreak
 set nowrap		" no wrap!
 set shell=sh
 set scrolloff=5		" show 5 lines of offset at top/bottom
+set list
+set listchars=eol:¶,trail:·,tab:»·,precedes:«,extends:»
 set sidescroll=5
 set sidescrolloff=5
 
