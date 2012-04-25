@@ -266,7 +266,14 @@ autocmd FileType mail abbreviate jrk Jochen Keil
 silent! call pathogen#infect()
 
 " syntastic
-autocmd InsertLeave * SyntasticCheck
+function SyntasticAutoCmd()
+    if exists(":SyntasticCheck")
+        autocmd InsertLeave * SyntasticCheck
+    endif
+endfunction
+
+autocmd VimEnter * call SyntasticAutoCmd()
+
 " Use this option to tell syntastic to automatically open and/or close the
 " |location-list| (see |syntastic-error-window|).
 " When set to 0 the error window will not be opened or closed automatically.
