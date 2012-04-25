@@ -88,7 +88,10 @@ set foldcolumn=2
 
 set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor,a:blinkon0
 
-set colorcolumn=80
+if version >= 703
+    set colorcolumn=80
+endif
+
 set cursorcolumn
 
 "All known problems
