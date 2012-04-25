@@ -106,7 +106,7 @@ au BufWinEnter *.c silent loadview
 au BufWinEnter *.h silent loadview
 
 "let g:zenburn_high_Contrast = 1
-colorscheme solarized
+silent! colorscheme solarized
 set background=dark
 
 highlight Comment cterm=italic
