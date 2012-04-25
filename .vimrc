@@ -263,7 +263,7 @@ autocmd FileType mail abbreviate vg Viele Grüße
 autocmd FileType mail abbreviate jr Jochen
 autocmd FileType mail abbreviate jrk Jochen Keil
 
-call pathogen#infect()
+silent! call pathogen#infect()
 
 " syntastic
 autocmd InsertLeave * SyntasticCheck
