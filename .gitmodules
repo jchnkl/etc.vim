@@ -1,0 +1,9 @@
+[submodule "submodules/ghcmod-vim"]
+	path = submodules/ghcmod-vim
+	url = https://github.com/eagletmt/ghcmod-vim.git
+[submodule "submodules/vim-pathogen"]
+	path = submodules/vim-pathogen
+	url = https://github.com/tpope/vim-pathogen.git
+[submodule "submodules/syntastic"]
+	path = submodules/syntastic
+	url = https://github.com/scrooloose/syntastic.git

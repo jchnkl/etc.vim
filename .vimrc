@@ -92,7 +92,10 @@ set foldcolumn=2
 
 set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor,sm:block-Cursor,a:blinkon0
 
-set colorcolumn=80
+if version >= 703
+    set colorcolumn=80
+endif
+
 set cursorcolumn
 
 "All known problems
@@ -107,7 +110,7 @@ au BufWinEnter *.c silent loadview
 au BufWinEnter *.h silent loadview
 
 "let g:zenburn_high_Contrast = 1
-colorscheme solarized
+silent! colorscheme solarized
 set background=dark
 
 highlight Comment cterm=italic
@@ -263,3 +266,23 @@ autocmd FileType mail abbreviate mfg Mit freundlichen Grüßen
 autocmd FileType mail abbreviate vg Viele Grüße
 autocmd FileType mail abbreviate jr Jochen
 autocmd FileType mail abbreviate jrk Jochen Keil
+
+silent! call pathogen#infect()
+
+" syntastic
+function SyntasticAutoCmd()
+    if exists(":SyntasticCheck")
+        autocmd InsertLeave * SyntasticCheck
+    endif
+endfunction
+
+autocmd VimEnter * call SyntasticAutoCmd()
+
+" Use this option to tell syntastic to automatically open and/or close the
+" |location-list| (see |syntastic-error-window|).
+" When set to 0 the error window will not be opened or closed automatically.
+" When set to 1 the error window will be automatically opened when errors are
+" detected, and closed when none are detected.
+" When set to 2 the error window will be automatically closed when no errors
+" are detected, but not opened automatically.
+let g:syntastic_auto_loc_list=1
