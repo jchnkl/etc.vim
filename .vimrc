@@ -135,8 +135,10 @@ set tags+=~/.vim/tags/tags
 "autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 "autocmd InsertLeave * if pumvisible() == 0|pclose|endif
 
-let alternateExtensions_cc = "hh"
-let alternateExtensions_hh = "cc"
+let g:alternateExtensions_cc = "hh"
+let g:alternateExtensions_hh = "cc"
+let g:alternateExtensions_cpp = "hpp"
+let g:alternateExtensions_hpp = "cpp"
 
 let g:bufExplorerDefaultHelp=1       " Show default help.
 let g:bufExplorerDetailedHelp=1      " Show detailed help.
