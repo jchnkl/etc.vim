@@ -253,6 +253,10 @@ nnoremap <silent> <Leader>tl	:TlistToggle<CR>
 nnoremap <silent> <Leader>s	:setlocal spell<CR>:setlocal spelllang=de_20,en<CR>
 nnoremap <silent> <Leader>sc	:tabe<CR>:setlocal buftype=nofile<CR>:setlocal bufhidden=hide<CR>:setlocal nobuflisted<CR>:setlocal noswapfile<CR>
 
+" http://stackoverflow.com/questions/1050745/unable-to-create-a-file-from-a-path-in-vim
+nnoremap gf :e <cfile><CR>
+nnoremap <C-W>gf :tabe <cfile><CR>
+
 " center search results
 nnoremap n nzz
 nnoremap N Nzz
