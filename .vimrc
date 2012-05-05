@@ -125,7 +125,7 @@ set encoding=utf-8
 language en_US.UTF-8
 
 let g:netrw_liststyle=3
-let g:netrw_sort_sequence = '[\/]$,\<core\%(\.\d\+\)\=,\.[a-np-z]$,\.hs$,\.x10$,\.h$,\.c$,\.cpp$,*,\.o$,\.obj$,\.info$,\.swp$,\.bak$,\~$'
+let g:netrw_sort_sequence = '[\/]$,\<core\%(\.\d\+\)\=,\.[a-np-z]$,\.hs$,\.x10$,\.h$,\.c$,\.cpp$,*,\.o$,\.class$,\.obj$,\.info$,\.swp$,\.bak$,\~$'
 
 let OmniCpp_ShowPrototypeInAbbr = 1
 let OmniCpp_NamespaceSearch = 2
