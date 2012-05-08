@@ -25,6 +25,8 @@ set listchars=trail:·,tab:▷·,precedes:«,extends:»
 set sidescroll=5
 set sidescrolloff=5
 
+autocmd BufEnter * if &buftype == 'quickfix' | setlocal wrap | endif
+
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf,.cb,.ind,.idx,.ilg,.inx,.out,.toc
