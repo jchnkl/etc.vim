@@ -15,4 +15,4 @@
 	url = https://github.com/scrooloose/nerdtree.git
 [submodule "submodules/nerdcommenter"]
 	path = submodules/nerdcommenter
-	url = git://github.com/scrooloose/nerdcommenter.git
+	url = https://github.com/scrooloose/nerdcommenter.git
