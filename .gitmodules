@@ -10,3 +10,6 @@
 [submodule "submodules/vimproc"]
 	path = submodules/vimproc
 	url = https://github.com/Shougo/vimproc.git
+[submodule "submodules/nerdtree"]
+	path = submodules/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
