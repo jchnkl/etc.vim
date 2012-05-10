@@ -20,6 +20,7 @@ set list
 set listchars=trail:·,tab:▷·,precedes:«,extends:»
 set sidescroll=5
 set sidescrolloff=5
+set previewheight=20
 
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
