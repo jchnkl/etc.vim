@@ -48,3 +48,6 @@
 [submodule "submodules/neocomplcache"]
 	path = submodules/neocomplcache
 	url = https://github.com/Shougo/neocomplcache.git
+[submodule "submodules/clang_complete"]
+	path = submodules/clang_complete
+	url = https://github.com/Rip-Rip/clang_complete.git
