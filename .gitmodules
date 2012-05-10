@@ -35,3 +35,6 @@
 [submodule "submodules/vim-showmarks"]
 	path = submodules/vim-showmarks
 	url = https://github.com/zakj/vim-showmarks.git
+[submodule "submodules/vim-colors-solarized"]
+	path = submodules/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
