@@ -16,10 +16,10 @@ if has("autocmd")
     "autocmd VimEnter * call LoadSession()
     autocmd VimLeave * call SaveSession()
 
-    autocmd BufWinLeave *.c mkview
-    autocmd BufWinLeave *.h mkview
-    autocmd BufWinEnter *.c silent loadview
-    autocmd BufWinEnter *.h silent loadview
+    " autocmd BufWinLeave *.c mkview
+    " autocmd BufWinLeave *.h mkview
+    " autocmd BufWinEnter *.c silent loadview
+    " autocmd BufWinEnter *.h silent loadview
 
     "autocmd VimEnter * call LoadSession()
     autocmd VimLeave * call SaveSession()
