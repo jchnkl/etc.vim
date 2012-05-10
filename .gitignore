@@ -1,3 +1,4 @@
+*.swp
 doc
 view
 haddock_index.vim
