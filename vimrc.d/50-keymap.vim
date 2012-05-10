@@ -17,9 +17,9 @@ nnoremap <silent> <Leader>q	:q!<CR>
 nnoremap <silent> <Leader>qa	:qa!<CR>
 nnoremap <silent> <Leader>bd	:bd!<CR>
 nnoremap <silent> <Leader>nh	:noh<CR>
-nnoremap <silent> <Leader>cd	:silent! :w!<CR>:VCSDiff<CR>
-nnoremap <silent> <Leader>cc	:silent! :w!<CR>:VCSCommit<CR>
-nnoremap <silent> <Leader>cv	:silent! :w!<CR>:VCSVimDiff<CR>
+" nnoremap <silent> <Leader>cd	:silent! :w!<CR>:VCSDiff<CR>
+" nnoremap <silent> <Leader>cc	:silent! :w!<CR>:VCSCommit<CR>
+" nnoremap <silent> <Leader>cv	:silent! :w!<CR>:VCSVimDiff<CR>
 " change global directory to basename of current file
 nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
