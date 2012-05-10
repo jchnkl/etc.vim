@@ -22,3 +22,6 @@
 [submodule "submodules/errormarker.vim"]
 	path = submodules/errormarker.vim
 	url = https://github.com/vim-scripts/errormarker.vim.git
+[submodule "submodules/haskellmode-vim"]
+	path = submodules/haskellmode-vim
+	url = https://github.com/lukerandall/haskellmode-vim.git
