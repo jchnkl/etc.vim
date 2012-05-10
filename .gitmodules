@@ -32,3 +32,6 @@
 [submodule "submodules/vim-align"]
 	path = submodules/vim-align
 	url = https://github.com/tsaleh/vim-align.git
+[submodule "submodules/vim-showmarks"]
+	path = submodules/vim-showmarks
+	url = https://github.com/zakj/vim-showmarks.git
