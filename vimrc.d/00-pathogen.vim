@@ -1,1 +1,1 @@
-call pathogen#infect('${HOME}/.vim/submodules')
+call pathogen#infect('~/.vim/submodules')
