@@ -1,4 +1,7 @@
-let ignored  = ['50-haskellmode.vim', '50-vala.vim', '50-taglist.vim']
+let ignored  = [ '50-haskellmode.vim'
+             \ , '50-vala.vim'
+             \ , '50-taglist.vim'
+             \ ]
 
 let vimrcdir = '~/.vim/vimrc.d'
 let scripts = split ( globpath ( vimrcdir,"*.vim" ), "\n" )
