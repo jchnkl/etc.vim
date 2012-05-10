@@ -1,6 +1,7 @@
 let ignored  = [ '50-haskellmode.vim'
              \ , '50-vala.vim'
              \ , '50-taglist.vim'
+             \ , '50-supertab.vim'
              \ ]
 
 let vimrcdir = '~/.vim/vimrc.d'
