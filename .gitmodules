@@ -42,3 +42,6 @@
 [submodule "submodules/buftabs"]
 	path = submodules/buftabs
 	url = https://github.com/vim-scripts/buftabs.git
+[submodule "submodules/neocomplcache"]
+	path = submodules/neocomplcache
+	url = https://github.com/Shougo/neocomplcache.git
