@@ -29,3 +29,6 @@
 [submodule "submodules/supertab"]
 	path = submodules/supertab
 	url = https://github.com/ervandew/supertab
+[submodule "submodules/vim-align"]
+	path = submodules/vim-align
+	url = https://github.com/tsaleh/vim-align.git
