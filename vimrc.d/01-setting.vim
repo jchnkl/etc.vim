@@ -75,5 +75,9 @@ set spelllang=de_20,en
 
 set guioptions=acgirL
 
+if has("gui_gtk2")
+  set guifont=Terminus\ 12
+endif
+
 "local printer
 set printdevice=hplj4l
