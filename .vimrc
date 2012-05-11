@@ -1,5 +1,6 @@
 let myscripts  = [ '00-pathogen.vim'
                \ , '10-set.vim'
+               \ , '10-syntax.vim'
                \ , '10-variables.vim'
                \ , '50-neocomplcache.vim'
                \ , '20-autocmd.vim'
@@ -11,7 +12,6 @@ let myscripts  = [ '00-pathogen.vim'
                \ , '50-mail.vim'
                \ , '50-omnicpp.vim'
                \ , '50-syntastic.vim'
-               \ , '50-syntax.vim'
                \ , '50-colorscheme.vim'
                \ ]
 
