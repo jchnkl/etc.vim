@@ -1,1 +1,0 @@
-silent! call pathogen#infect()
