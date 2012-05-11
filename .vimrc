@@ -20,7 +20,7 @@ let ignored  = [ '50-haskellmode.vim'
              " \ , '50-colorscheme.vim'
              " \ , '00-pathogen.vim'
 '
-let vimrcdir = '~/.vim/vimrc.d'
+let vimrcdir = 'vimrc.d'
 let scripts = split ( globpath ( vimrcdir,"*.vim" ), "\n" )
 
 for i in ignored
@@ -28,5 +28,5 @@ for i in ignored
 endfor
 
 for s in scripts
-    exe 'source' s
+    execute 'runtime!' s
 endfor
