@@ -59,7 +59,7 @@ if version >= 703
     set colorcolumn=80
 endif
 
-set cursorcolumn
+" set cursorcolumn
 
 " All known problems have been fixed, but the FreeBSD Security Team advises that
 " VIM users use 'set nomodeline' in ~/.vimrc to avoid the possibility of trojaned
