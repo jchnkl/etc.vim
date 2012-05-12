@@ -16,9 +16,6 @@ let myscripts  = [ '00-pathogen.vim'
 
                " \ , '50-haskellmode.vim'
                " \ , '50-vala.vim'
-               " \ , '50-taglist.vim'
-               " \ , '50-supertab.vim'
-               " \ , '50-omnicpp.vim'
 
 let myscriptdir = 'vimrc.d'
 
