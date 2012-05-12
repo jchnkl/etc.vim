@@ -22,7 +22,11 @@ set hlsearch
 " If on Vim will wrap long lines at a character in 'breakat'
 " This option is not used when the 'wrap' option is off or 'list' is on.
 set linebreak
-set nowrap  " no wrap!
+
+" When on, lines longer than the width of the window will wrap and displaying
+" continues on the next line. When off lines will not wrap and only part of long
+" lines will be displayed.
+set nowrap
 set shell=sh
 " show 5 lines of offset at top/bottom
 set scrolloff=5
