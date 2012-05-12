@@ -12,9 +12,6 @@ if has("autocmd")
     autocmd CmdwinEnter * let b:ei_save = &eventignore | set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave * let &eventignore = b:ei_save
 
-    "autocmd VimEnter * call LoadSession()
-    autocmd VimLeave * call SaveSession()
-
     " autocmd BufWinLeave *.c mkview
     " autocmd BufWinLeave *.h mkview
     " autocmd BufWinEnter *.c silent loadview
