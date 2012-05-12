@@ -1,5 +1,7 @@
 if has("autocmd")
 
+    " wrap lines in quickfix buffer, so that error messages won't get lost on
+    " off-screen
     autocmd BufEnter    * if &buftype == 'quickfix' | setlocal wrap | endif
 
     " Check if any buffers were changed outside of Vim
