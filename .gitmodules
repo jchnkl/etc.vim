@@ -60,3 +60,6 @@
 [submodule "submodules/vim-unimpaired"]
 	path = submodules/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired.git
+[submodule "submodules/vim-eunuch"]
+	path = submodules/vim-eunuch
+	url = https://github.com/tpope/vim-eunuch.git
