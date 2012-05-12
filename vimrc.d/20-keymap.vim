@@ -25,7 +25,7 @@ nnoremap <silent> <Leader>gc    :silent! :Gwrite<CR>:Gci<CR>
 nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
 nnoremap <silent> <Leader>lc    :lcd %:h<CR>
-nnoremap <silent> <Leader>tl    :TlistToggle<CR>
+
 nnoremap <silent> <Leader>s     :setlocal spell<CR>
                                \:setlocal spelllang=de_20,en<CR>
 nnoremap <silent> <Leader>sc    :tabe<CR>:setlocal buftype=nofile<CR>
