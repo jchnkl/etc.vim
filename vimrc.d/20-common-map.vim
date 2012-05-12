@@ -19,6 +19,7 @@ nnoremap <silent> <Leader>q     :q!<CR>
 nnoremap <silent> <Leader>qa    :qa!<CR>
 nnoremap <silent> <Leader>bd    :bd!<CR>
 nnoremap <silent> <Leader>nh    :noh<CR>
+
 " change global directory to basename of current file
 nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
