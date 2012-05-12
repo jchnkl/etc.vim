@@ -5,6 +5,7 @@ if has("autocmd")
     filetype indent plugin on
 
     autocmd BufEnter    * if &buftype == 'quickfix' | setlocal wrap | endif
+
     " Check if any buffers were changed outside of Vim
     autocmd WinEnter    * checktime
     autocmd CursorHold  * checktime
