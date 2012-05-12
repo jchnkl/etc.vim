@@ -133,15 +133,15 @@ if version >= 703
     set colorcolumn=80
 endif
 
-" A comma separated list of options for Insert mode completion
-" |ins-completion|.
-" removing preview fixes popup menu disappearing problem with cursorcolumn
-set completeopt-=preview
-
 " Highlight the screen column of the cursor with CursorColumn
 " |hl-CursorColumn|.  Useful to align text.  Will make screen redrawing
 " slower.
 set cursorcolumn
+
+" A comma separated list of options for Insert mode completion
+" |ins-completion|.
+" removing preview fixes popup menu disappearing problem with cursorcolumn
+set completeopt-=preview
 
 " If you start editing a new file, and the 'modeline' option is on, a
 " number of lines at the beginning and end of the file are checked for
