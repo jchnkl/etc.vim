@@ -51,6 +51,3 @@
 [submodule "submodules/clang_complete"]
 	path = submodules/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
-[submodule "submodules/tcomment_vim"]
-	path = submodules/tcomment_vim
-	url = https://github.com/tomtom/tcomment_vim.git
