@@ -28,7 +28,8 @@ set linebreak
 " lines will be displayed.
 set nowrap
 set shell=sh
-" show 5 lines of offset at top/bottom
+
+" Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=5
 set list
 set listchars=trail:·,tab:▷·,precedes:«,extends:»
