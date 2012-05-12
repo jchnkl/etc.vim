@@ -4,18 +4,23 @@ set nocompatible " Use Vim defaults instead of 100% vi compatibility
 set backspace=indent,eol,start " more powerful backspacing
 
 " Now we set some defaults for the editor
-set autoindent  " always set autoindenting on
-set textwidth=80 " textwidth 80 is quite common
-"set backup  " keep a backup file
-set viminfo='20,\"50 " read/write a .viminfo file, don't store more than
-   " 50 lines of registers
-set history=50  " keep 50 lines of command line history
-set ruler  " show the cursor position all the time
+" always set autoindenting on
+set autoindent
+" textwidth 80 is quite common
+set textwidth=80
+" set backup                            " keep a backup file
+" read/write a .viminfo file, don't store more than 50 lines of registers
+set viminfo='20,\"50
+" keep 50 lines of command line history
+set history=50
+" show the cursor position all the time
+set ruler
 set hlsearch
 set linebreak
 set nowrap  " no wrap!
 set shell=sh
-set scrolloff=5  " show 5 lines of offset at top/bottom
+" show 5 lines of offset at top/bottom
+set scrolloff=5
 set list
 set listchars=trail:·,tab:▷·,precedes:«,extends:»
 set sidescroll=5
