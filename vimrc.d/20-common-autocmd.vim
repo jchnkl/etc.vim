@@ -10,7 +10,8 @@ if has("autocmd")
     autocmd WinEnter    * checktime
     autocmd CursorHold  * checktime
     autocmd InsertEnter * checktime
-    autocmd CmdwinEnter * let b:ei_save = &eventignore | set eventignore=CursorHold,InsertEnter
+    autocmd CmdwinEnter * let b:ei_save = &eventignore
+                       \| set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave * let &eventignore = b:ei_save
 
 endif " has ("autocmd")
