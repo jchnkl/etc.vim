@@ -57,3 +57,6 @@
 [submodule "submodules/vim-speeddating"]
 	path = submodules/vim-speeddating
 	url = https://github.com/tpope/vim-speeddating.git
+[submodule "submodules/vim-unimpaired"]
+	path = submodules/vim-unimpaired
+	url = https://github.com/tpope/vim-unimpaired.git
