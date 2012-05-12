@@ -15,4 +15,4 @@ if has("autocmd")
                        \| set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave * let &eventignore = b:ei_save
 
-endif " has ("autocmd")
+endif
