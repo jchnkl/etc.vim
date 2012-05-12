@@ -9,9 +9,9 @@ let myscripts  = [ '00-pathogen.vim'
                \ , '50-a.vim'
                \ , '50-colorscheme.vim'
                \ , '50-fugitive.vim'
-               \ , '50-vimlatex.vim'
                \ , '50-neocomplcache.vim'
                \ , '50-syntastic.vim'
+               \ , '50-vimlatex.vim'
                \ ]
 
                " \ , '50-haskellmode.vim'
