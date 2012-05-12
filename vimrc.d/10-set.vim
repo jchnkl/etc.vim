@@ -126,12 +126,6 @@ set foldmethod=syntax
 " of the window which indicates open and closed folds.
 set foldcolumn=2
 
-" This option tells Vim what the cursor should look like in different
-" modes.
-set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor
-            \,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
-            \,sm:block-Cursor,a:blinkon0
-
 if version >= 703
 " 'colorcolumn' is a comma separated list of screen columns that are
 " highlighted with ColorColumn |hl-ColorColumn|.  Useful to align
@@ -163,15 +157,21 @@ set encoding=utf-8
 " on spellchecking will be done for these languages.
 set spelllang=de_20,en
 
-" This option only has an effect in the GUI version of Vim.  It is a
-" sequence of letters which describes what components and options of the
-" GUI should be used.
-set guioptions=acgirL
-
-if has("gui_gtk2")
-" This is a list of fonts which will be used for the GUI version of Vim.
-  set guifont=Terminus\ 12
-endif
-
 " The name of the printer to be used for |:hardcopy|.
 set printdevice=hplj4l
+
+if has("gui_gtk2")
+    " This is a list of fonts which will be used for the GUI version of Vim.
+    set guifont=Terminus\ 12
+
+    " This option only has an effect in the GUI version of Vim.  It is a
+    " sequence of letters which describes what components and options of the
+    " GUI should be used.
+    set guioptions=acgirL
+
+    " This option tells Vim what the cursor should look like in different
+    " modes.
+    set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor
+                \,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
+                \,sm:block-Cursor,a:blinkon0
+endif
