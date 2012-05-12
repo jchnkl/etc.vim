@@ -1,5 +1,4 @@
 let g:pathogen_disabled = [ 'haskellmode-vim'
-                        \ , 'supertab'
                         \ ]
                         " \ , 'buftabs'
                         " \ , 'nerdcommenter'
