@@ -4,10 +4,10 @@ if has("autocmd")
     " to automatically do language-dependent indenting add 'indent' as well.
     filetype indent plugin on
 
-    autocmd BufEnter * if &buftype == 'quickfix' | setlocal wrap | endif
+    autocmd BufEnter    * if &buftype == 'quickfix' | setlocal wrap | endif
     " Check if any buffers were changed outside of Vim
-    autocmd WinEnter * checktime
-    autocmd CursorHold * checktime
+    autocmd WinEnter    * checktime
+    autocmd CursorHold  * checktime
     autocmd InsertEnter * checktime
     autocmd CmdwinEnter * let b:ei_save = &eventignore | set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave * let &eventignore = b:ei_save
