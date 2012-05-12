@@ -29,7 +29,7 @@ set linebreak
 set nowrap
 
 " Name of the shell to use for ! and :! commands.
-set shell=sh
+" set shell=sh
 
 " Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=5
