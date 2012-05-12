@@ -14,8 +14,6 @@ set autoindent
 " broken after white space to get this width.
 set textwidth=80
 
-" set backup                            " keep a backup file
-
 " When non-empty, the viminfo file is read upon startup and written
 " when exiting Vim (see |viminfo-file|).
 set viminfo='20,\"50
@@ -39,9 +37,6 @@ set linebreak
 " displaying continues on the next line.  When off lines will not wrap
 " and only part of long lines will be displayed.
 set nowrap
-
-" Name of the shell to use for ! and :! commands.
-" set shell=sh
 
 " Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=5
@@ -97,7 +92,6 @@ set incsearch
 " :make, CTRL-] and CTRL-^ command; and when a :buffer, CTRL-O, CTRL-I,
 " '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
 set autowrite
-" set autoread  " file changed outside of Vim -> read it again
 
 " In Insert mode: Use the appropriate number of spaces to insert a
 " <Tab>.  Spaces are used in indents with the '>' and '<' commands and
