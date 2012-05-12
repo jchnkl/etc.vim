@@ -15,4 +15,8 @@ if has("autocmd")
                        \| set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave * let &eventignore = b:ei_save
 
+    autocmd FileType *tex setlocal spell
+    autocmd FileType *tex set grepprg=grep\ -nH\ $*
+    autocmd FileType *tex let g:tex_flavor = "latex"
+
 endif
