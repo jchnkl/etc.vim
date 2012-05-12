@@ -1,5 +1,6 @@
 " Make p in Visual mode replace the selected text with the "" register.
-vnoremap p <Esc>:let current_reg = @"<CR>gvdi<C-R>=current_reg<CR><Esc>
+vnoremap          p             <Esc>:let current_reg = @"<CR>gvdi<C-R>
+                               \=current_reg<CR><Esc>
 
 imap     <silent> <S-Insert>    <MiddleMouse>
 nnoremap <silent> <S-Insert>    "*p
@@ -33,16 +34,16 @@ nnoremap <silent> <Leader>sc    :tabe<CR>:setlocal buftype=nofile<CR>
                                \:setlocal noswapfile<CR>
 
 " http://stackoverflow.com/questions/1050745/unable-to-create-a-file-from-a-path-in-vim
-nnoremap gf :e <cfile><CR>
-nnoremap <C-W>gf :tabe <cfile><CR>
+nnoremap          gf            :e <cfile><CR>
+nnoremap          <C-W>gf       :tabe <cfile><CR>
 
 " center search results
-nnoremap n nzz
-nnoremap N Nzz
-nnoremap * *zz
-nnoremap # #zz
-nnoremap g* g*zz
-nnoremap g# g#zz
+nnoremap          n             nzz
+nnoremap          N             Nzz
+nnoremap          *             *zz
+nnoremap          #             #zz
+nnoremap          g*            g*zz
+nnoremap          g#            g#zz
 
 " plugins/ghf.vim
-map <silent> ghf :call OpenHaskellFile()<CR>
+map      <silent> ghf           :call OpenHaskellFile()<CR>
