@@ -12,6 +12,4 @@ if has("autocmd")
     autocmd CmdwinEnter * let b:ei_save = &eventignore | set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave * let &eventignore = b:ei_save
 
-    autocmd VimLeave * call SaveSession()
-
 endif " has ("autocmd")
