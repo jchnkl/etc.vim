@@ -2,6 +2,11 @@
 " make Vim behave in a more useful way.
 set nocompatible
 
+" Sets the character encoding used inside Vim.  It applies to text in
+" the buffers, registers, Strings in expressions, text stored in the
+" viminfo file, etc.
+set encoding=utf-8
+
 " Influences the working of <BS>, <Del>, CTRL-W and CTRL-U in Insert
 " mode.
 set backspace=indent,eol,start
@@ -22,9 +27,22 @@ set viminfo='20,\"50
 " are remembered.
 set history=50
 
+" Write the contents of the file, if it has been modified, on each
+" :next, :rewind, :last, :first, :previous, :stop, :suspend, :tag, :!,
+" :make, CTRL-] and CTRL-^ command; and when a :buffer, CTRL-O, CTRL-I,
+" '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
+set autowrite
+
+" When on, the mouse pointer is hidden when characters are typed.
+set mousehide
+
 " Show the line and column number of the cursor position, separated by a
 " comma.
 set ruler
+
+" Show (partial) command in the last line of the screen.  Set this
+" option off if your terminal is slow.
+set showcmd
 
 " When there is a previous search pattern, highlight all its matches.
 set hlsearch
@@ -66,10 +84,6 @@ set previewheight=20
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf
             \,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 
-" Show (partial) command in the last line of the screen.  Set this
-" option off if your terminal is slow.
-set showcmd
-
 " When a bracket is inserted, briefly jump to the matching one.  The
 " jump is only done if the match can be seen on the screen.  The time to
 " show the match can be set with 'matchtime'.
@@ -87,12 +101,6 @@ set smartcase
 " so far, matches.
 set incsearch
 
-" Write the contents of the file, if it has been modified, on each
-" :next, :rewind, :last, :first, :previous, :stop, :suspend, :tag, :!,
-" :make, CTRL-] and CTRL-^ command; and when a :buffer, CTRL-O, CTRL-I,
-" '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
-set autowrite
-
 " In Insert mode: Use the appropriate number of spaces to insert a
 " <Tab>.  Spaces are used in indents with the '>' and '<' commands and
 " when 'autoindent' is on.  To insert a real tab when 'expandtab' is
@@ -106,18 +114,12 @@ set shiftwidth=4
 " operations, like inserting a <Tab> or using <BS>.
 set softtabstop=4
 
-" When on, the mouse pointer is hidden when characters are typed.
-set mousehide
-
 " When on, the title of the window will be set to the value of
 " 'titlestring' (if it is not empty)
 set title titlestring=vi:%t
 
 " Print the line number in front of each line.
 set number
-
-" Highlight the screen line of the cursor with CursorLine |hl-CursorLine|.
-set cursorline
 
 " The kind of folding used for the current window.
 set foldmethod=syntax
@@ -133,6 +135,9 @@ if version >= 703
     set colorcolumn=80
 endif
 
+" Highlight the screen line of the cursor with CursorLine |hl-CursorLine|.
+set cursorline
+
 " Highlight the screen column of the cursor with CursorColumn
 " |hl-CursorColumn|.  Useful to align text.  Will make screen redrawing
 " slower.
@@ -147,11 +152,6 @@ set completeopt-=preview
 " number of lines at the beginning and end of the file are checked for
 " modelines.
 set modeline
-
-" Sets the character encoding used inside Vim.  It applies to text in
-" the buffers, registers, Strings in expressions, text stored in the
-" viminfo file, etc.
-set encoding=utf-8
 
 " A comma separated list of word list names.  When the 'spell' option is
 " on spellchecking will be done for these languages.
