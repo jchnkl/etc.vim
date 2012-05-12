@@ -27,6 +27,8 @@ set linebreak
 " continues on the next line. When off lines will not wrap and only part of long
 " lines will be displayed.
 set nowrap
+
+" Name of the shell to use for ! and :! commands.
 set shell=sh
 
 " Minimal number of screen lines to keep above and below the cursor.
