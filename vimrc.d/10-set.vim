@@ -154,16 +154,10 @@ set cursorcolumn
 " modelines.
 set modeline
 
-" Specify the character encoding used in the script.
-scriptencoding utf-8
-
 " Sets the character encoding used inside Vim.  It applies to text in
 " the buffers, registers, Strings in expressions, text stored in the
 " viminfo file, etc.
 set encoding=utf-8
-
-" Set the current language (aka locale) to {name}.
-language en_US.UTF-8
 
 " A comma separated list of word list names.  When the 'spell' option is
 " on spellchecking will be done for these languages.
