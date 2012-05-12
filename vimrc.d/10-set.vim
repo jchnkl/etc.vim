@@ -15,7 +15,12 @@ set viminfo='20,\"50
 set history=50
 " show the cursor position all the time
 set ruler
+
+" When there is a previous search pattern, highlight all its matches.
 set hlsearch
+
+" If on Vim will wrap long lines at a character in 'breakat'
+" This option is not used when the 'wrap' option is off or 'list' is on.
 set linebreak
 set nowrap  " no wrap!
 set shell=sh
