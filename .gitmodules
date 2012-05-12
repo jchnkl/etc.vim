@@ -54,3 +54,6 @@
 [submodule "submodules/vim-repeat"]
 	path = submodules/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
+[submodule "submodules/vim-speeddating"]
+	path = submodules/vim-speeddating
+	url = https://github.com/tpope/vim-speeddating.git
