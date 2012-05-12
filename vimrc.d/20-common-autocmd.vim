@@ -2,8 +2,7 @@ if has("autocmd")
     " Enabled file type detection
     " Use the default filetype settings. If you also want to load indent files
     " to automatically do language-dependent indenting add 'indent' as well.
-    filetype indent on
-    filetype plugin on
+    filetype indent plugin on
 
     autocmd BufEnter * if &buftype == 'quickfix' | setlocal wrap | endif
     " Check if any buffers were changed outside of Vim
