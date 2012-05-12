@@ -51,3 +51,6 @@
 [submodule "submodules/clang_complete"]
 	path = submodules/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
+[submodule "submodules/Command-T"]
+	path = submodules/Command-T
+	url = https://github.com/wincent/Command-T.git
