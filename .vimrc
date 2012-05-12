@@ -1,7 +1,7 @@
 let myscripts  = [ '00-pathogen.vim'
                \ , '10-common-set.vim'
                \ , '10-common-let.vim'
-               \ , '20-autocmd.vim'
+               \ , '20-common-autocmd.vim'
                \ , '20-command.vim'
                \ , '20-functions.vim'
                \ , '20-common-map.vim'
