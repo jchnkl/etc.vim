@@ -183,7 +183,7 @@ endif
 "         :syntax on
 syntax enable
 
-" Enabled file type detection
-" Use the default filetype settings. If you also want to load indent files
-" to automatically do language-dependent indenting add 'indent' as well.
+" Vim can detect the type of file that is edited.  This is done by checking the
+" file name and sometimes by inspecting the contents of the file for specific
+" text.
 filetype indent plugin on
