@@ -1,21 +1,21 @@
 " Normally we use vim-extensions. If you want true vi-compatibility
 " remove change the following statements
-set nocompatible	" Use Vim defaults instead of 100% vi compatibility
-set backspace=indent,eol,start	" more powerful backspacing
+set nocompatible " Use Vim defaults instead of 100% vi compatibility
+set backspace=indent,eol,start " more powerful backspacing
 
 " Now we set some defaults for the editor
-set autoindent		" always set autoindenting on
-set textwidth=80	" textwidth 80 is quite common
-"set backup		" keep a backup file
-set viminfo='20,\"50	" read/write a .viminfo file, don't store more than
-			" 50 lines of registers
-set history=50		" keep 50 lines of command line history
-set ruler		" show the cursor position all the time
+set autoindent  " always set autoindenting on
+set textwidth=80 " textwidth 80 is quite common
+"set backup  " keep a backup file
+set viminfo='20,\"50 " read/write a .viminfo file, don't store more than
+   " 50 lines of registers
+set history=50  " keep 50 lines of command line history
+set ruler  " show the cursor position all the time
 set hlsearch
 set linebreak
-set nowrap		" no wrap!
+set nowrap  " no wrap!
 set shell=sh
-set scrolloff=5		" show 5 lines of offset at top/bottom
+set scrolloff=5  " show 5 lines of offset at top/bottom
 set list
 set listchars=trail:·,tab:▷·,precedes:«,extends:»
 set sidescroll=5
@@ -29,13 +29,13 @@ set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf
 
 " The following are commented out as they cause vim to behave a lot
 " different from regular vi. They are highly recommended though.
-set showcmd		" Show (partial) command in status line.
-set showmatch		" Show matching brackets.
-set ignorecase		" Do case insensitive matching
-set incsearch		" Incremental search
-set smartcase		" ignore ic when pattern contains uppercase
-set autowrite		" Automatically save before commands like :next and :make
-" set autoread		" file changed outside of Vim -> read it again
+set showcmd  " Show (partial) command in status line.
+set showmatch  " Show matching brackets.
+set ignorecase  " Do case insensitive matching
+set incsearch  " Incremental search
+set smartcase  " ignore ic when pattern contains uppercase
+set autowrite  " Automatically save before commands like :next and :make
+" set autoread  " file changed outside of Vim -> read it again
 
 set expandtab
 set shiftwidth=4
