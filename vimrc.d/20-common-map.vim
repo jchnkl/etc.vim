@@ -43,6 +43,3 @@ nnoremap          *             *zz
 nnoremap          #             #zz
 nnoremap          g*            g*zz
 nnoremap          g#            g#zz
-
-" plugins/ghf.vim
-map      <silent> ghf           :call OpenHaskellFile()<CR>
