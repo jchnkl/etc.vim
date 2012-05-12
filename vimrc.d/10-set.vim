@@ -127,9 +127,9 @@ set foldmethod=syntax
 set foldcolumn=2
 
 if version >= 703
-" 'colorcolumn' is a comma separated list of screen columns that are
-" highlighted with ColorColumn |hl-ColorColumn|.  Useful to align
-" text.  Will make screen redrawing slower.
+    " 'colorcolumn' is a comma separated list of screen columns that are
+    " highlighted with ColorColumn |hl-ColorColumn|.  Useful to align
+    " text.  Will make screen redrawing slower.
     set colorcolumn=80
 endif
 
