@@ -175,3 +175,10 @@ if has("gui_gtk2")
                 \,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
                 \,sm:block-Cursor,a:blinkon0
 endif
+
+" The ":syntax enable" command will keep your current color settings.  This
+" allows using ":highlight" commands to set your preferred colors before or
+" after using this command.  If you want Vim to overrule your settings with the
+" defaults, use: >
+"         :syntax on
+syntax enable
