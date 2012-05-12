@@ -17,7 +17,7 @@ nnoremap <silent> <Leader>q	:q!<CR>
 nnoremap <silent> <Leader>qa	:qa!<CR>
 nnoremap <silent> <Leader>bd	:bd!<CR>
 nnoremap <silent> <Leader>nh	:noh<CR>
-nnoremap <silent> <Leader>gc	:silent! :Gwrite<CR>:Gcommit -v<CR>
+nnoremap <silent> <Leader>gc	:silent! :Gwrite<CR>:Gci<CR>
 " nnoremap <silent> <Leader>cd	:silent! :w!<CR>:VCSDiff<CR>
 " nnoremap <silent> <Leader>cc	:silent! :w!<CR>:VCSCommit<CR>
 " nnoremap <silent> <Leader>cv	:silent! :w!<CR>:VCSVimDiff<CR>
