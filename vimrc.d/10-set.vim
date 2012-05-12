@@ -1,31 +1,43 @@
-" Normally we use vim-extensions. If you want true vi-compatibility
-" remove change the following statements
-set nocompatible " Use Vim defaults instead of 100% vi compatibility
-set backspace=indent,eol,start " more powerful backspacing
+" This option has the effect of making Vim either more Vi-compatible, or
+" make Vim behave in a more useful way.
+set nocompatible
 
-" Now we set some defaults for the editor
-" always set autoindenting on
+" Influences the working of <BS>, <Del>, CTRL-W and CTRL-U in Insert
+" mode.
+set backspace=indent,eol,start
+
+" Copy indent from current line when starting a new line (typing <CR>
+" in Insert mode or when using the "o" or "O" command).
 set autoindent
-" textwidth 80 is quite common
+
+" Maximum width of text that is being inserted.  A longer line will be
+" broken after white space to get this width.
 set textwidth=80
+
 " set backup                            " keep a backup file
-" read/write a .viminfo file, don't store more than 50 lines of registers
+
+" When non-empty, the viminfo file is read upon startup and written
+" when exiting Vim (see |viminfo-file|).
 set viminfo='20,\"50
-" keep 50 lines of command line history
+
+" A history of ":" commands, and a history of previous search patterns
+" are remembered.
 set history=50
-" show the cursor position all the time
+
+" Show the line and column number of the cursor position, separated by a
+" comma.
 set ruler
 
 " When there is a previous search pattern, highlight all its matches.
 set hlsearch
 
-" If on Vim will wrap long lines at a character in 'breakat'
-" This option is not used when the 'wrap' option is off or 'list' is on.
+" If on Vim will wrap long lines at a character in 'breakat' rather
+" than at the last character that fits on the screen.  Unlike
 set linebreak
 
-" When on, lines longer than the width of the window will wrap and displaying
-" continues on the next line. When off lines will not wrap and only part of long
-" lines will be displayed.
+" When on, lines longer than the width of the window will wrap and
+" displaying continues on the next line.  When off lines will not wrap
+" and only part of long lines will be displayed.
 set nowrap
 
 " Name of the shell to use for ! and :! commands.
@@ -33,10 +45,25 @@ set nowrap
 
 " Minimal number of screen lines to keep above and below the cursor.
 set scrolloff=5
+
+" List mode: Show tabs as CTRL-I is displayed, display $ after end of
+" line.  Useful to see the difference between tabs and spaces and for
+" trailing blanks.
 set list
+
+" Strings to use in 'list' mode and for the |:list| command.  It is a
+" comma separated list of string settings.
 set listchars=trail:·,tab:▷·,precedes:«,extends:»
+
+" The minimal number of columns to scroll horizontally.  Used only when
+" the 'wrap' option is off and the cursor is moved off of the screen.
 set sidescroll=5
+
+" The minimal number of screen columns to keep to the left and to the
+" right of the cursor if 'nowrap' is set.
 set sidescrolloff=5
+
+" Default height for a preview window. (Fugitive uses preview window too)
 set previewheight=20
 
 " Suffixes that get lower priority when doing tab completion for filenames.
@@ -44,59 +71,119 @@ set previewheight=20
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf
             \,.cb,.ind,.idx,.ilg,.inx,.out,.toc
 
-" The following are commented out as they cause vim to behave a lot
-" different from regular vi. They are highly recommended though.
-set showcmd  " Show (partial) command in status line.
-set showmatch  " Show matching brackets.
-set ignorecase  " Do case insensitive matching
-set incsearch  " Incremental search
-set smartcase  " ignore ic when pattern contains uppercase
-set autowrite  " Automatically save before commands like :next and :make
+" Show (partial) command in the last line of the screen.  Set this
+" option off if your terminal is slow.
+set showcmd
+
+" When a bracket is inserted, briefly jump to the matching one.  The
+" jump is only done if the match can be seen on the screen.  The time to
+" show the match can be set with 'matchtime'.
+set showmatch
+
+" Ignore case in search patterns.
+set ignorecase
+
+" Override the 'ignorecase' option if the search pattern contains upper
+" case characters.  Only used when the search pattern is typed and
+" 'ignorecase' option is on.
+set smartcase
+
+" While typing a search command, show where the pattern, as it was typed
+" so far, matches.
+set incsearch
+
+" Write the contents of the file, if it has been modified, on each
+" :next, :rewind, :last, :first, :previous, :stop, :suspend, :tag, :!,
+" :make, CTRL-] and CTRL-^ command; and when a :buffer, CTRL-O, CTRL-I,
+" '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
+set autowrite
 " set autoread  " file changed outside of Vim -> read it again
 
+" In Insert mode: Use the appropriate number of spaces to insert a
+" <Tab>.  Spaces are used in indents with the '>' and '<' commands and
+" when 'autoindent' is on.  To insert a real tab when 'expandtab' is
+" on, use CTRL-V<Tab>.
 set expandtab
+
+" Number of spaces to use for each step of (auto)indent.
 set shiftwidth=4
+
+" Number of spaces that a <Tab> counts for while performing editing
+" operations, like inserting a <Tab> or using <BS>.
 set softtabstop=4
 
-set mousehide           " already enabled by default; just to remember
+" When on, the mouse pointer is hidden when characters are typed.
+set mousehide
 
+" When on, the title of the window will be set to the value of
+" 'titlestring' (if it is not empty)
 set title titlestring=vi:%t
 
-set nu
-set cul
+" Print the line number in front of each line.
+set number
 
+" Highlight the screen line of the cursor with CursorLine |hl-CursorLine|.
+set cursorline
+
+" The kind of folding used for the current window.
 set foldmethod=syntax
+
+" When non-zero, a column with the specified width is shown at the side
+" of the window which indicates open and closed folds.
 set foldcolumn=2
 
+" This option tells Vim what the cursor should look like in different
+" modes.
 set guicursor=n-v-c:block-Cursor/lCursor,ve:ver35-Cursor,o:hor50-Cursor
             \,i-ci:ver25-Cursor/lCursor,r-cr:hor20-Cursor/lCursor
             \,sm:block-Cursor,a:blinkon0
 
 if version >= 703
+" 'colorcolumn' is a comma separated list of screen columns that are
+" highlighted with ColorColumn |hl-ColorColumn|.  Useful to align
+" text.  Will make screen redrawing slower.
     set colorcolumn=80
 endif
 
-set completeopt-=preview " fixes popup menu disappearing problem with cursorcolumn
+" A comma separated list of options for Insert mode completion
+" |ins-completion|.
+" removing preview fixes popup menu disappearing problem with cursorcolumn
+set completeopt-=preview
+
+" Highlight the screen column of the cursor with CursorColumn
+" |hl-CursorColumn|.  Useful to align text.  Will make screen redrawing
+" slower.
 set cursorcolumn
 
-" All known problems have been fixed, but the FreeBSD Security Team advises that
-" VIM users use 'set nomodeline' in ~/.vimrc to avoid the possibility of trojaned
-" text files.
+" If you start editing a new file, and the 'modeline' option is on, a
+" number of lines at the beginning and end of the file are checked for
+" modelines.
 set modeline
 
+" Specify the character encoding used in the script.
 scriptencoding utf-8
+
+" Sets the character encoding used inside Vim.  It applies to text in
+" the buffers, registers, Strings in expressions, text stored in the
+" viminfo file, etc.
 set encoding=utf-8
 
+" Set the current language (aka locale) to {name}.
 language en_US.UTF-8
 
-" always set spelllang
+" A comma separated list of word list names.  When the 'spell' option is
+" on spellchecking will be done for these languages.
 set spelllang=de_20,en
 
+" This option only has an effect in the GUI version of Vim.  It is a
+" sequence of letters which describes what components and options of the
+" GUI should be used.
 set guioptions=acgirL
 
 if has("gui_gtk2")
+" This is a list of fonts which will be used for the GUI version of Vim.
   set guifont=Terminus\ 12
 endif
 
-"local printer
+" The name of the printer to be used for |:hardcopy|.
 set printdevice=hplj4l
