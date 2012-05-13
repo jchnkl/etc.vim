@@ -1,5 +1,6 @@
-let g:pathogen_disabled = [ 'haskellmode-vim'
+let g:pathogen_disabled = [
                         \ ]
+                        " \ , 'haskellmode-vim'
                         " \ , 'buftabs'
                         " \ , 'nerdcommenter'
                         " \ , 'nerdtree'
@@ -18,6 +19,8 @@ let g:pathogen_disabled = [ 'haskellmode-vim'
 
 if ! executable ( 'ghc-mod' )
     call add ( g:pathogen_disabled, 'ghcmod-vim' )
+else
+    call add ( g:pathogen_disabled, 'haskellmode-vim' )
 endif
 
 if ! executable ( 'clang' )
