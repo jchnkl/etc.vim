@@ -33,6 +33,10 @@ set history=50
 " '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
 set autowrite
 
+" The time in milliseconds that is waited for a key code or mapped key
+" sequence to complete.  Also used for CTRL-\ CTRL-N and CTRL-\ CTRL-G
+set timeoutlen=500
+
 " When on, the mouse pointer is hidden when characters are typed.
 set mousehide
 
