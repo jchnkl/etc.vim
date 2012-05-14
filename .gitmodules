@@ -6,7 +6,7 @@
 	url = https://github.com/tpope/vim-pathogen.git
 [submodule "submodules/syntastic"]
 	path = submodules/syntastic
-	url = https://github.com/scrooloose/syntastic.git
+	url = https://github.com/jrk-/syntastic.git
 [submodule "submodules/vimproc"]
 	path = submodules/vimproc
 	url = https://github.com/Shougo/vimproc.git
