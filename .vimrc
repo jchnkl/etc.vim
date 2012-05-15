@@ -11,6 +11,7 @@ let myscripts  = [ '00-pathogen.vim'
                \ , '50-colorscheme.vim'
                \ , '50-fugitive.vim'
                \ , '50-neocomplcache.vim'
+               \ , '50-surround.vim'
                \ , '50-syntastic.vim'
                \ , '50-vimlatex.vim'
                \ ]
