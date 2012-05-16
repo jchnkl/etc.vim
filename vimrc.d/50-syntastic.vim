@@ -15,3 +15,9 @@ autocmd VimEnter * call SyntasticAutoCmd()
 " When set to 2 the error window will be automatically closed when no errors
 " are detected, but not opened automatically.
 let g:syntastic_auto_loc_list=1
+
+" undocumented variable for haskell syntax checker
+" options are passed to ghc-mod, run 'ghc-mod help'
+let g:syntastic_haskell_checker_args =
+            \ '--hlintOpt="--language=XmlSyntax"
+            \  --ghcOpt="-i${HOME}/.xmonad/lib"'
