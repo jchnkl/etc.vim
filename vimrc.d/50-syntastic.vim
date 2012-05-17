@@ -5,7 +5,7 @@ function SyntasticAutoCmd()
     endif
 endfunction
 
-autocmd VimEnter * call SyntasticAutoCmd()
+" autocmd VimEnter * call SyntasticAutoCmd()
 
 " Use this option to tell syntastic to automatically open and/or close the
 " |location-list| (see |syntastic-error-window|).
