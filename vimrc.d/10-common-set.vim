@@ -87,7 +87,7 @@ set previewheight=20
 " patterns is ignored when completing file or directory names, and
 " influences the result of |expand()|, |glob()| and |globpath()| unless
 " a flag is passed to disable this.
-set wildignore=*.o,*.obj,.git,submodules/**
+set wildignore=*.o,*.obj,*.hi,*.class,.git,submodules/**
 
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
