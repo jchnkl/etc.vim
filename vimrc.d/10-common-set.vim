@@ -83,6 +83,12 @@ set sidescrolloff=5
 " Default height for a preview window. (Fugitive uses preview window too)
 set previewheight=20
 
+" A list of file patterns.  A file that matches with one of these
+" patterns is ignored when completing file or directory names, and
+" influences the result of |expand()|, |glob()| and |globpath()| unless
+" a flag is passed to disable this.
+set wildignore=*.o,*.obj,.git,submodules/**
+
 " Suffixes that get lower priority when doing tab completion for filenames.
 " These are files we are not likely to want to edit or read.
 set suffixes=.bak,~,.swp,.o,.info,.aux,.log,.dvi,.bbl,.blg,.brf
