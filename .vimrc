@@ -12,6 +12,7 @@ let myscripts  = [ '00-pathogen.vim'
                \ , '50-colorscheme.vim'
                \ , '50-fugitive.vim'
                \ , '50-ghcmod.vim'
+               \ , '50-haskellmode.vim'
                \ , '50-neocomplcache-clang.vim'
                \ , '50-neocomplcache-clang_complete.vim'
                \ , '50-neocomplcache.vim'
@@ -20,7 +21,6 @@ let myscripts  = [ '00-pathogen.vim'
                \ , '50-vimlatex.vim'
                \ ]
 
-               " \ , '50-haskellmode.vim'
                " \ , '50-vala.vim'
 
 let myscriptdir = 'vimrc.d'
