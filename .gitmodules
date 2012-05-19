@@ -36,9 +36,6 @@
 [submodule "submodules/vim-colors-solarized"]
 	path = submodules/vim-colors-solarized
 	url = https://github.com/altercation/vim-colors-solarized.git
-[submodule "submodules/buftabs"]
-	path = submodules/buftabs
-	url = https://github.com/vim-scripts/buftabs.git
 [submodule "submodules/neco-ghc"]
 	path = submodules/neco-ghc
 	url = https://github.com/ujihisa/neco-ghc.git
