@@ -1,23 +1,29 @@
 let g:pathogen_disabled = [
                         \ ]
+
+                        " \ , 'Command-T'
+                        " \ , 'clang_complete'
+                        " \ , 'errormarker.vim'
+                        " \ , 'ghcmod-vim'
                         " \ , 'haskellmode-vim'
-                        " \ , 'buftabs'
+                        " \ , 'neco-ghc'
+                        " \ , 'neocomplcache'
                         " \ , 'neocomplcache-clang'
                         " \ , 'neocomplcache-clang_complete'
                         " \ , 'nerdcommenter'
                         " \ , 'nerdtree'
                         " \ , 'syntastic'
                         " \ , 'vim-align'
-                        " \ , 'vim-fugitive'
-                        " \ , 'vimproc'
-                        " \ , 'vim-showmarks'
-                        " \ , 'neocomplcache'
-                        " \ , 'neco-ghc'
-                        " \ , 'errormarker.vim'
-                        " \ , 'ghcmod-vim'
                         " \ , 'vim-colors-solarized'
+                        " \ , 'vim-eunuch'
+                        " \ , 'vim-fugitive'
                         " \ , 'vim-pathogen'
-                        " \ , 'clang_complete'
+                        " \ , 'vim-repeat'
+                        " \ , 'vim-showmarks'
+                        " \ , 'vim-speeddating'
+                        " \ , 'vim-surround'
+                        " \ , 'vim-unimpaired'
+                        " \ , 'vimproc'
 
 if ! executable ( 'ghc-mod' )
     call add ( g:pathogen_disabled, 'ghcmod-vim' )
