@@ -2,6 +2,8 @@ let g:pathogen_disabled = [
                         \ ]
                         " \ , 'haskellmode-vim'
                         " \ , 'buftabs'
+                        " \ , 'neocomplcache-clang'
+                        " \ , 'neocomplcache-clang_complete'
                         " \ , 'nerdcommenter'
                         " \ , 'nerdtree'
                         " \ , 'syntastic'
