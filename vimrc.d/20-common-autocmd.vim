@@ -2,7 +2,6 @@ if has("autocmd")
 
     " wrap lines in quickfix buffer, so that error messages won't get lost on
     " off-screen
-    autocmd BufNew      *    if &buftype == 'quickfix' | setlocal wrap | endif
     autocmd BufEnter    *    if &buftype == 'quickfix' | setlocal wrap | endif
     autocmd BufWinEnter *    if &buftype == 'quickfix' | setlocal wrap | endif
 
