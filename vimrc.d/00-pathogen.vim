@@ -8,7 +8,6 @@ let g:pathogen_disabled = [
                         " \ , 'haskellmode-vim'
                         " \ , 'neco-ghc'
                         " \ , 'neocomplcache'
-                        " \ , 'neocomplcache-clang'
                         " \ , 'neocomplcache-clang_complete'
                         " \ , 'nerdcommenter'
                         " \ , 'nerdtree'

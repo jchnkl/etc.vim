@@ -64,9 +64,6 @@
 [submodule "submodules/vim-surround"]
 	path = submodules/vim-surround
 	url = https://github.com/tpope/vim-surround.git
-[submodule "submodules/neocomplcache-clang"]
-	path = submodules/neocomplcache-clang
-	url = https://github.com/Shougo/neocomplcache-clang.git
 [submodule "submodules/neocomplcache-clang_complete"]
 	path = submodules/neocomplcache-clang_complete
 	url = https://github.com/osyo-manga/neocomplcache-clang_complete
