@@ -33,6 +33,13 @@ set history=50
 " '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
 set autowrite
 
+" 'timeout'    'ttimeout'    action
+"  off          off          do not time out
+"  on           on or off    time out on :mappings and key codes
+"  off          on           time out on key codes
+set notimeout
+set ttimeout
+
 " The time in milliseconds that is waited for a key code or mapped key
 " sequence to complete.  Also used for CTRL-\ CTRL-N and CTRL-\ CTRL-G
 set timeoutlen=500
