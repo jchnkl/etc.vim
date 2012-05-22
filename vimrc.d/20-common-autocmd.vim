@@ -22,7 +22,7 @@ if has("autocmd")
 
     " filetype gitcommit is not detected properly.
     " Git uses COMMIT_EDITMSG as temporary file for the commit message
-    autocmd BufNewFile,BufRead COMMIT_EDITMSG setlocal filetype=gitcommit
+    autocmd VimEnter COMMIT_EDITMSG setlocal filetype=gitcommit
 
     autocmd FileType    *tex setlocal spell
     autocmd FileType    *tex set grepprg=grep\ -nH\ $*
