@@ -8,7 +8,6 @@ let g:myscripts  = [ '00-pathogen.vim'
                  \ , '50-NERDCommenter.vim'
                  \ , '50-NERDTree.vim'
                  \ , '50-a.vim'
-                 \ , '50-buftabs.vim'
                  \ , '50-colors-solarized.vim'
                  \ , '50-colorscheme.vim'
                  \ , '50-fugitive.vim'
@@ -20,6 +19,7 @@ let g:myscripts  = [ '00-pathogen.vim'
                  \ , '50-vimlatex.vim'
                  \ ]
 
+               " \ , '50-buftabs.vim'
                " \ , '50-vala.vim'
 
 if executable ( 'ghc-mod' )
