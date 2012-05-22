@@ -24,10 +24,10 @@ let g:pathogen_disabled = [
                         " \ , 'vim-unimpaired'
                         " \ , 'vimproc'
 
-if ! executable ( 'ghc-mod' )
-    call add ( g:pathogen_disabled, 'ghcmod-vim' )
-else
+if executable ( 'ghc-mod' )
     call add ( g:pathogen_disabled, 'haskellmode-vim' )
+else
+    call add ( g:pathogen_disabled, 'ghcmod-vim' )
 endif
 
 if ! executable ( 'clang' )
