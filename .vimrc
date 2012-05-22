@@ -12,8 +12,6 @@ let g:myscripts  = [ '00-pathogen.vim'
                \ , '50-colors-solarized.vim'
                \ , '50-colorscheme.vim'
                \ , '50-fugitive.vim'
-               \ , '50-ghcmod.vim'
-               \ , '50-haskellmode.vim'
                \ , '50-neocomplcache-clang.vim'
                \ , '50-neocomplcache-clang_complete.vim'
                \ , '50-neocomplcache.vim'
@@ -23,6 +21,12 @@ let g:myscripts  = [ '00-pathogen.vim'
                \ ]
 
                " \ , '50-vala.vim'
+
+if executable ( 'ghc-mod' )
+    call add ( g:myscripts, '50-ghcmod.vim' )
+else
+    call add ( g:myscripts, '50-haskellmode.vim' )
+endif
 
 let myscriptdir = 'vimrc.d'
 
