@@ -37,7 +37,7 @@ set autowrite
 "  off          off          do not time out
 "  on           on or off    time out on :mappings and key codes
 "  off          on           time out on key codes
-set timeout
+set notimeout
 set ttimeout
 
 " The time in milliseconds that is waited for a key code or mapped key
