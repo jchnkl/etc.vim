@@ -42,7 +42,7 @@ set ttimeout
 
 " The time in milliseconds that is waited for a key code or mapped key
 " sequence to complete.  Also used for CTRL-\ CTRL-N and CTRL-\ CTRL-G
-set timeoutlen=500
+set timeoutlen=625
 
 " When on, the mouse pointer is hidden when characters are typed.
 set mousehide
