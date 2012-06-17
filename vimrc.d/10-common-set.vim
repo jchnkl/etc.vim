@@ -85,7 +85,7 @@ set sidescroll=5
 
 " The minimal number of screen columns to keep to the left and to the
 " right of the cursor if 'nowrap' is set.
-set sidescrolloff=5
+set sidescrolloff=1
 
 " Default height for a preview window. (Fugitive uses preview window too)
 set previewheight=20
