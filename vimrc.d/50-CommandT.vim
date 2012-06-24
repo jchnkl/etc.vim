@@ -6,7 +6,5 @@ let g:CommandTMatchWindowReverse = 1
 
 let g:CommandTCancelMap          = '<Esc>'
 
-" Alt-t
-nnoremap <silent> [23~ :CommandT<CR>
-" Alt-b
-nnoremap <silent> [21~ :CommandTBuffer<CR>
+nnoremap <silent> <Leader>f :CommandT<CR>
+nnoremap <silent> <Leader>b :CommandTBuffer<CR>

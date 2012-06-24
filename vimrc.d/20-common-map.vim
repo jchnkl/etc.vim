@@ -17,7 +17,6 @@ nnoremap <silent> <Leader>x     :x!<CR>
 nnoremap <silent> <Leader>xa    :xa!<CR>
 nnoremap <silent> <Leader>q     :q!<CR>
 nnoremap <silent> <Leader>qa    :qa!<CR>
-nnoremap <silent> <Leader>bd    :bd!<CR>
 nnoremap <silent> <Leader>nh    :noh<CR>
 
 " change global directory to basename of current file
