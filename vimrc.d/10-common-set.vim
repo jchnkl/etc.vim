@@ -100,6 +100,13 @@ set sidescrolloff=1
 " Default height for a preview window. (Fugitive uses preview window too)
 set previewheight=20
 
+" The value of this option influences when the last window will have a
+" status line:
+"       0: never
+"       1: only if there are at least two windows
+"       2: always
+set laststatus=2
+
 " A list of file patterns.  A file that matches with one of these
 " patterns is ignored when completing file or directory names, and
 " influences the result of |expand()|, |glob()| and |globpath()| unless
