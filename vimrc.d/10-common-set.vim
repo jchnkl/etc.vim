@@ -33,6 +33,16 @@ set history=50
 " '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
 set autowrite
 
+" Function keys that start with an <Esc> are recognized in Insert
+" mode.  When this option is off, the cursor and function keys cannot be
+" used in Insert mode if they start with an <Esc>.  The advantage of
+" this is that the single <Esc> is recognized immediately, instead of
+" after one second.  Instead of resetting this option, you might want to
+" try changing the values for 'timeoutlen' and 'ttimeoutlen'.  Note that
+" when 'esckeys' is off, you can still map anything, but the cursor keys
+" won't work by default.
+set esckeys
+
 " 'timeout'    'ttimeout'    action
 "  off          off          do not time out
 "  on           on or off    time out on :mappings and key codes
