@@ -3,7 +3,8 @@ vnoremap          p             <Esc>:let current_reg = @"<CR>gvdi<C-R>
                                \=current_reg<CR><Esc>
 
 " [34~ (F20) is bound to C-BackSpace for urxvt in .Xresources
-imap     <silent> [34~        <C-W>
+set      <F20>=[34~
+map      <silent> <F20>         <C-W>
 imap     <silent> <S-Insert>    <MiddleMouse>
 nnoremap <silent> <S-Insert>    "*p
 nnoremap <silent> <F2>          :wa<Bar>exe "mksession! " . v:this_session<CR>
