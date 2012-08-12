@@ -67,3 +67,6 @@
 [submodule "submodules/neocomplcache-clang_complete"]
 	path = submodules/neocomplcache-clang_complete
 	url = https://github.com/osyo-manga/neocomplcache-clang_complete
+[submodule "submodules/vim-powerline"]
+	path = submodules/vim-powerline
+	url = https://github.com/Lokaltog/vim-powerline.git
