@@ -70,3 +70,30 @@
 [submodule "submodules/vim-powerline"]
 	path = submodules/vim-powerline
 	url = https://github.com/Lokaltog/vim-powerline.git
+[submodule "submodules/tagbar"]
+	path = submodules/tagbar
+	url = https://github.com/majutsushi/tagbar.git
+[submodule "submodules/vim-haskellFold"]
+	path = submodules/vim-haskellFold
+	url = https://github.com/Twinside/vim-haskellFold.git
+[submodule "submodules/vim-indent-guides"]
+	path = submodules/vim-indent-guides
+	url = https://github.com/nathanaelkane/vim-indent-guides.git
+[submodule "submodules/vim-textobj-indent"]
+	path = submodules/vim-textobj-indent
+	url = https://github.com/kana/vim-textobj-indent.git
+[submodule "submodules/vim-textobj-user"]
+	path = submodules/vim-textobj-user
+	url = https://github.com/kana/vim-textobj-user.git
+[submodule "submodules/ctrlp.vim"]
+	path = submodules/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "submodules/undotree"]
+	path = submodules/undotree
+	url = https://github.com/mbbill/undotree.git
+[submodule "submodules/vim-easymotion"]
+	path = submodules/vim-easymotion
+	url = https://github.com/Lokaltog/vim-easymotion.git
+[submodule "submodules/git-rebase-helper"]
+	path = submodules/git-rebase-helper
+	url = https://github.com/pix/git-rebase-helper.git
