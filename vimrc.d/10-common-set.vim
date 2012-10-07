@@ -33,6 +33,20 @@ set history=50
 " '{A-Z0-9}, or `{A-Z0-9} command takes one to another file.
 set autowrite
 
+if has("persistent_undo")
+    " List of directory names for undo files, separated with commas.
+    if exists ( "$XDG_CACHE_HOME" )
+        let &undodir = $XDG_CACHE_HOME . '/vim/undo'
+    else
+        let &undodir = $HOME . '/.cache/vim/undo'
+    endif
+
+    " When on, Vim automatically saves undo history to an undo file when
+    " writing a buffer to a file, and restores undo history from the same
+    " file on buffer read.
+    set undofile
+endif
+
 " Function keys that start with an <Esc> are recognized in Insert
 " mode.  When this option is off, the cursor and function keys cannot be
 " used in Insert mode if they start with an <Esc>.  The advantage of
