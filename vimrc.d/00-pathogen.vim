@@ -1,38 +1,43 @@
-let g:pathogen_disabled = [
-                        \ ]
+let g:pathogen_disabled = []
 
-                        " \ , 'Command-T'
-                        " \ , 'clang_complete'
-                        " \ , 'errormarker.vim'
-                        " \ , 'ghcmod-vim'
-                        " \ , 'haskellmode-vim'
-                        " \ , 'neco-ghc'
-                        " \ , 'neocomplcache'
-                        " \ , 'neocomplcache-clang_complete'
-                        " \ , 'nerdcommenter'
-                        " \ , 'nerdtree'
-                        " \ , 'syntastic'
-                        " \ , 'vim-align'
-                        " \ , 'vim-colors-solarized'
-                        " \ , 'vim-eunuch'
-                        " \ , 'vim-fugitive'
-                        " \ , 'vim-pathogen'
-                        " \ , 'vim-repeat'
-                        " \ , 'vim-showmarks'
-                        " \ , 'vim-speeddating'
-                        " \ , 'vim-surround'
-                        " \ , 'vim-unimpaired'
-                        " \ , 'vimproc'
+"   [ 'Command-T'
+" \ , 'errormarker.vim'
+" \ , 'ghcmod-vim'
+" \ , 'haskellmode-vim'
+" \ , 'neco-ghc'
+" \ , 'neocomplcache'
+" \ , 'neocomplcache-clang_complete'
+" \ , 'nerdcommenter'
+" \ , 'nerdtree'
+" \ , 'syntastic'
+" \ , 'tagbar'
+" \ , 'vim2hs'
+" \ , 'vim-align'
+" \ , 'vim-colors-solarized'
+" \ , 'vim-eunuch'
+" \ , 'vim-fugitive'
+" \ , 'vim-haskellFold'
+" \ , 'vim-indent-guides'
+" \ , 'vim-pathogen'
+" \ , 'vim-powerline'
+" \ , 'vimproc'
+" \ , 'vim-repeat'
+" \ , 'vim-showmarks'
+" \ , 'vim-speeddating'
+" \ , 'vim-surround'
+" \ , 'vim-textobj-indent'
+" \ , 'vim-textobj-user'
+" \ , 'vim-unimpaired'
+" \ ]
 
-if executable ( 'ghc-mod' )
-    call add ( g:pathogen_disabled, 'haskellmode-vim' )
-else
-    call add ( g:pathogen_disabled, 'ghcmod-vim' )
-endif
 
-if ! executable ( 'clang' )
-    call add ( g:pathogen_disabled, 'clang_complete' )
-endif
+" if ! executable ( 'ghc-mod' )
+    " call add ( g:pathogen_disabled, 'ghcmod-vim' )
+" endif
+
+" if ! executable ( 'clang' )
+    " call add ( g:pathogen_disabled, 'clang_complete' )
+" endif
 
 runtime! submodules/vim-pathogen/autoload/pathogen.vim
 
