@@ -45,10 +45,6 @@
 [submodule "submodules/clang_complete"]
 	path = submodules/clang_complete
 	url = https://github.com/Rip-Rip/clang_complete.git
-[submodule "submodules/Command-T"]
-	path = submodules/Command-T
-	url = https://github.com/wincent/Command-T.git
-	ignore = untracked
 [submodule "submodules/vim-repeat"]
 	path = submodules/vim-repeat
 	url = https://github.com/tpope/vim-repeat.git
