@@ -2,6 +2,15 @@
 " make Vim behave in a more useful way.
 set nocompatible
 
+" Enables the reading of .vimrc, .exrc and .gvimrc in the current
+" directory.
+set exrc
+
+" When on, ":autocmd", shell and write commands are not allowed in
+" ".vimrc" and ".exrc" in the current directory and map commands are
+" displayed.
+set secure
+
 " Sets the character encoding used inside Vim.  It applies to text in
 " the buffers, registers, Strings in expressions, text stored in the
 " viminfo file, etc.
