@@ -28,6 +28,10 @@ set autoindent
 " broken after white space to get this width.
 set textwidth=80
 
+" This is a sequence of letters which describes how automatic formatting
+" is to be done. See |fo-table|.
+set formatoptions+=1
+
 " When non-empty, the viminfo file is read upon startup and written
 " when exiting Vim (see |viminfo-file|).
 set viminfo='20,\"50
