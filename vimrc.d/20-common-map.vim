@@ -29,6 +29,16 @@ nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
 nnoremap <silent> <Leader>lc    :lcd %:h<CR>
 
+" useful when line wrapping is enabled
+nnoremap          j             gj
+nnoremap          k             gk
+
+" Easy window navigation
+map               <C-h>         <C-w>h
+map               <C-j>         <C-w>j
+map               <C-k>         <C-w>k
+map               <C-l>         <C-w>l
+
 nnoremap <silent> <Leader>s     :setlocal spell<CR>
                                \:setlocal spelllang=de_20,en<CR>
 nnoremap <silent> <Leader>sc    :tabe<CR>:setlocal buftype=nofile<CR>
