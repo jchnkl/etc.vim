@@ -17,7 +17,7 @@ if has("autocmd")
     " this prevents triggering 'checktime' in cmdwin when enter-/leaving insert
     " mode; without vim will complain
     autocmd CmdwinEnter *    let b:ei_save = &eventignore
-                          \| set eventignore=CursorHold,InsertEnter
+                         \ | set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave *    let &eventignore = b:ei_save
 
     " filetype gitcommit is not detected properly.
