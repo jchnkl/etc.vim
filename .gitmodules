@@ -98,3 +98,6 @@
 [submodule "submodules/vim-autoformat"]
 	path = submodules/vim-autoformat
 	url = https://github.com/Chiel92/vim-autoformat
+[submodule "submodules/vim-numbertoggle"]
+	path = submodules/vim-numbertoggle
+	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
