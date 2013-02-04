@@ -5,6 +5,7 @@ let g:myscripts =
 \ , '20-common-autocmd.vim'
 \ , '20-common-function.vim'
 \ , '20-common-map.vim'
+\ , '30-NextClosedFold.vim'
 \ , '50-a.vim'
 \ , '50-colorscheme.vim'
 \ , '50-colors-solarized.vim'
