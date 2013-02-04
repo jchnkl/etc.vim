@@ -180,7 +180,11 @@ set softtabstop=2
 set title titlestring=vi:%t
 
 " Print the line number in front of each line.
-set number
+" set number
+
+" Show the line number relative to the line with the cursor in front of each
+" line.
+set relativenumber
 
 " The kind of folding used for the current window.
 set foldmethod=syntax
