@@ -169,11 +169,11 @@ set incsearch
 set expandtab
 
 " Number of spaces to use for each step of (auto)indent.
-set shiftwidth=4
+set shiftwidth=2
 
 " Number of spaces that a <Tab> counts for while performing editing
 " operations, like inserting a <Tab> or using <BS>.
-set softtabstop=4
+set softtabstop=2
 
 " When on, the title of the window will be set to the value of
 " 'titlestring' (if it is not empty)
