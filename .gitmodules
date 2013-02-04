@@ -95,3 +95,6 @@
 [submodule "submodules/git-rebase-helper"]
 	path = submodules/git-rebase-helper
 	url = https://github.com/pix/git-rebase-helper.git
+[submodule "submodules/vim-autoformat"]
+	path = submodules/vim-autoformat
+	url = https://github.com/Chiel92/vim-autoformat
