@@ -12,8 +12,8 @@ nnoremap <silent> <S-Insert>    "*p
 nnoremap <silent> <F2>          :wa<Bar>exe "mksession! " . v:this_session<CR>
 nnoremap <silent> <C-n>         gt
 nnoremap <silent> <C-p>         gT
-nnoremap <silent> <C-F12>       :!ctags -R --languages=c++ --c++-kinds=+p
-                                \--fields=+iaS --extra=+q .<CR>
+nnoremap <silent> <C-F12>       :!ctags -R --c++-kinds=+p --fields=+iaS
+                                    \--extra=+q .<CR>
 
 nnoremap <silent> <Leader>a     :b#<CR>
 nnoremap <silent> <Leader>w     :w!<CR>
