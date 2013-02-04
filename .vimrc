@@ -28,7 +28,6 @@ let g:myscripts =
 " 50-buftabs.vim
 " 50-CommandT.vim
 " 50-vala.vim
-" 50-vimlatex.vim
 
 let myscriptdir = 'vimrc.d'
 
