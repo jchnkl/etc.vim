@@ -20,6 +20,9 @@ if has("autocmd")
                          \ | set eventignore=CursorHold,InsertEnter
     autocmd CmdwinLeave *    let &eventignore = b:ei_save
 
+    " autocmd BufWritePre *    :execute ":Autoformat"
+    "                      \ | :call feedkeys("\<CR>", 'n')
+
     " filetype gitcommit is not detected properly.
     " Git uses COMMIT_EDITMSG as temporary file for the commit message
     autocmd VimEnter COMMIT_EDITMSG setlocal filetype=gitcommit
