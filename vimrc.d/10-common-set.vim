@@ -209,7 +209,7 @@ if version >= 703
     " 'colorcolumn' is a comma separated list of screen columns that are
     " highlighted with ColorColumn |hl-ColorColumn|.  Useful to align
     " text.  Will make screen redrawing slower.
-    set colorcolumn=80
+    " set colorcolumn=80
 endif
 
 " Highlight the screen line of the cursor with CursorLine |hl-CursorLine|.
