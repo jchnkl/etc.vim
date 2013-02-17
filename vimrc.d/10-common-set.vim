@@ -194,6 +194,10 @@ set numberwidth=2
 " line.
 set relativenumber
 
+" This option controls the behavior when switching between buffers.
+" Possible values (comma separated list): useopen, usetab, split, newtab
+set switchbuf=useopen,usetab
+
 " The kind of folding used for the current window.
 set foldmethod=syntax
 
