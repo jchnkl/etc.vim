@@ -1,4 +1,4 @@
-let g:myscripts =
+let s:myscripts =
 \ [ '00-pathogen.vim'
 \ , '10-common-let.vim'
 \ , '10-common-set.vim'
@@ -32,6 +32,6 @@ let g:myscripts =
 
 let myscriptdir = 'vimrc.d'
 
-for myscript in g:myscripts
-    execute 'runtime!' myscriptdir . '/' . g:myscript
+for s:myscript in s:myscripts
+    execute 'runtime!' myscriptdir . '/' . s:myscript
 endfor
