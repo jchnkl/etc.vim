@@ -184,6 +184,9 @@ set softtabstop=2
 " 'titlestring' (if it is not empty)
 set title titlestring=vi:%t
 
+" Minimal number of columns to use for the line number.
+set numberwidth=2
+
 " Print the line number in front of each line.
 " set number
 
