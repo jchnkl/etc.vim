@@ -60,6 +60,11 @@ if has("persistent_undo")
     set undofile
 endif
 
+" If this many milliseconds nothing is typed the swap file will be
+" written to disk (see |crash-recovery|).  Also used for the
+" |CursorHold| autocommand event.
+set updatetime=1000
+
 " Function keys that start with an <Esc> are recognized in Insert
 " mode.  When this option is off, the cursor and function keys cannot be
 " used in Insert mode if they start with an <Esc>.  The advantage of
