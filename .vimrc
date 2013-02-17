@@ -18,6 +18,7 @@ let g:myscripts =
 \ , '50-neocomplcache.vim'
 \ , '50-NERDCommenter.vim'
 \ , '50-NERDTree.vim'
+\ , '50-showmarks.vim'
 \ , '50-surround.vim'
 \ , '50-syntastic.vim'
 \ , '50-Tagbar.vim'
