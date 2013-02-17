@@ -98,3 +98,6 @@
 [submodule "submodules/vim-numbertoggle"]
 	path = submodules/vim-numbertoggle
 	url = git://github.com/jeffkreeftmeijer/vim-numbertoggle.git
+[submodule "submodules/vim-showmarks"]
+	path = submodules/vim-showmarks
+	url = https://github.com/jacquesbh/vim-showmarks
