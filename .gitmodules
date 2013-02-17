@@ -101,3 +101,6 @@
 [submodule "submodules/vim-showmarks"]
 	path = submodules/vim-showmarks
 	url = https://github.com/jacquesbh/vim-showmarks
+[submodule "submodules/lushtags"]
+	path = submodules/lushtags
+	url = https://github.com/bitc/lushtags
