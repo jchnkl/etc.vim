@@ -19,6 +19,7 @@ let g:pathogen_disabled =
 " \ , 'nerdtree'
 " \ , 'syntastic'
 " \ , 'tagbar'
+" \ , 'ultisnips'
 " \ , 'undotree'
 " \ , 'vim-align'
 " \ , 'vim-autoformat'
