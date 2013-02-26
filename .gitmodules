@@ -104,3 +104,6 @@
 [submodule "submodules/lushtags"]
 	path = submodules/lushtags
 	url = https://github.com/bitc/lushtags
+[submodule "submodules/ultisnips"]
+	path = submodules/ultisnips
+	url = https://github.com/SirVer/ultisnips
