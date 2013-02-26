@@ -1,4 +1,10 @@
-let g:pathogen_disabled = []
+let g:pathogen_disabled =
+\ [ 'vim-easymotion'
+\ , 'vim-eunuch'
+\ , 'vim-speeddating'
+\ , 'vim-surround'
+\ , 'vim-unimpaired'
+\ ]
 
 " \ [ 'clang_complete'
 " \ , 'ctrlp.vim'
