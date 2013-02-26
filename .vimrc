@@ -7,6 +7,7 @@ let s:myscripts =
 \ , '20-common-map.vim'
 \ , '30-NextClosedFold.vim'
 \ , '50-a.vim'
+\ , '50-clang_complete.vim'
 \ , '50-colorscheme.vim'
 \ , '50-colors-solarized.vim'
 \ , '50-ctrlp.vim.vim'
@@ -22,6 +23,7 @@ let s:myscripts =
 \ , '50-surround.vim'
 \ , '50-syntastic.vim'
 \ , '50-Tagbar.vim'
+\ , '50-ultisnips.vim'
 \ , '50-undotree.vim'
 \ , '50-vimlatex.vim'
 \ ]

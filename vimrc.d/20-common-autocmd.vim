@@ -14,6 +14,11 @@ if has("autocmd")
     autocmd CursorHold  *    checktime
     autocmd InsertEnter *    checktime
 
+    " Another fix for the disappearing popup menu problem
+    " http://code.google.com/p/vim/issues/detail?id=3
+    autocmd CompleteDone * set noruler
+    autocmd CursorMoved  * set ruler
+
     " this prevents triggering 'checktime' in cmdwin when enter-/leaving insert
     " mode; without vim will complain
     autocmd CmdwinEnter *    let b:ei_save = &eventignore
