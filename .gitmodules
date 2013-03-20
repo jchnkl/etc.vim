@@ -107,3 +107,6 @@
 [submodule "submodules/ultisnips"]
 	path = submodules/ultisnips
 	url = https://github.com/SirVer/ultisnips
+[submodule "submodules/vim-gitgutter"]
+	path = submodules/vim-gitgutter
+	url = https://github.com/airblade/vim-gitgutter
