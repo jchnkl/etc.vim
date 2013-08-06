@@ -157,7 +157,7 @@ func <SID>GetPage(...)
   if $MANWIDTH > winwidth(0)
     let $MANWIDTH = winwidth(0)
   endif
-  silent exec "r!/usr/bin/man ".s:GetCmdArg(sect, page)." | col -b"
+  silent exec "r!/usr/bin/man ".s:GetCmdArg(sect, page)." | col -b -x"
   let $MANWIDTH = tmpmanwidth
   " Remove blank lines from top and bottom.
   while getline(1) =~ '^\s*$'
