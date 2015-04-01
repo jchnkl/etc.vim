@@ -1,4 +1,4 @@
-let s:myscripts =
+let s:scripts =
 \ [ '00-pathogen.vim'
 \ , '10-common-let.vim'
 \ , '10-common-set.vim'
@@ -12,10 +12,11 @@ let s:myscripts =
 " 50-CommandT.vim
 " 50-vala.vim
 
-let myscriptdir = 'vimrc.d'
+let s:scriptdir = 'vimrc.d'
 
-for s:myscript in s:myscripts
-    execute 'runtime!' myscriptdir . '/' . s:myscript
+for s:script in s:scripts
+    execute 'runtime!' s:scriptdir . '/' . s:script
+endfor
 
 let s:bundledir = 'bundle.d'
 
