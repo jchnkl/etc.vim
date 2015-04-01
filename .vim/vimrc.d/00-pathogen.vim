@@ -51,8 +51,8 @@ let g:pathogen_disabled =
     " call add ( g:pathogen_disabled, 'clang_complete' )
 " endif
 
-runtime! submodules/vim-pathogen/autoload/pathogen.vim
+runtime! bundle/vim-pathogen/autoload/pathogen.vim
 
-call pathogen#infect('~/.vim/submodules')
+call pathogen#infect('~/.vim/bundle')
 
 Helptags
