@@ -16,4 +16,12 @@ let myscriptdir = 'vimrc.d'
 
 for s:myscript in s:myscripts
     execute 'runtime!' myscriptdir . '/' . s:myscript
+
+let s:bundledir = 'bundle.d'
+
+for s:bundle in map(split(&runtimepath, ","), 'fnamemodify(v:val, ":t")')
+    let s:cfgfile = s:bundledir . '/' . s:bundle
+    if filereadable(s:cfgfile)
+        execute 'runtime!' s:cfgfile
+    endif
 endfor
