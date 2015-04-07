@@ -17,17 +17,16 @@ cnoremap <silent> <F20>         <C-W>
 nnoremap <silent> <F2>          :wa<Bar>exe "mksession! " . v:this_session<CR>
 nnoremap <silent> <C-n>         gt
 nnoremap <silent> <C-p>         gT
-nnoremap <silent> <C-F12>       :!ctags -R --c++-kinds=+p --fields=+iaS
-                                    \--extra=+q .<CR>
 
-nnoremap <silent> <Leader>a     :b#<CR>
-nnoremap <silent> <Leader>w     :w!<CR>
-nnoremap <silent> <Leader>wa    :wa!<CR>
-nnoremap <silent> <Leader>x     :x!<CR>
-nnoremap <silent> <Leader>xa    :xa!<CR>
-nnoremap <silent> <Leader>q     :q!<CR>
-nnoremap <silent> <Leader>qa    :qa!<CR>
-nnoremap <silent> <Leader>nh    :noh<CR>
+nnoremap <silent> <Leader><Leader> q:
+nnoremap <silent> <Leader>a        :b#<CR>
+nnoremap <silent> <Leader>w        :w!<CR>
+nnoremap <silent> <Leader>W        :wa!<CR>
+nnoremap <silent> <Leader>x        :x!<CR>
+nnoremap <silent> <Leader>X        :xa!<CR>
+nnoremap <silent> <Leader>Q        :qa!<CR>
+nnoremap <silent> <Leader><C-]>    <C-w><C-]><C-w>T
+nnoremap <silent>                  <Esc><Esc> :nohlsearch<CR><Esc>
 
 " change global directory to basename of current file
 nnoremap <silent> <Leader>c     :cd %:h<CR>
