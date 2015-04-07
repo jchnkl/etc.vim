@@ -39,6 +39,18 @@ nnoremap <silent> <Leader>Q        :qa!<CR>
 nnoremap <silent> <Leader><C-]>    <C-w><C-]><C-w>T
 nnoremap <silent>                  <Esc><Esc> :nohlsearch<CR><Esc>
 
+nnoremap <silent> <Leader><Tab>    <C-w><C-w>
+
+nnoremap <silent> <Leader>h        <C-w>h
+nnoremap <silent> <Leader>j        <C-w>j
+nnoremap <silent> <Leader>k        <C-w>k
+nnoremap <silent> <Leader>l        <C-w>l
+
+nnoremap <silent> <Leader>H        <C-w>H
+nnoremap <silent> <Leader>J        <C-w>J
+nnoremap <silent> <Leader>K        <C-w>K
+nnoremap <silent> <Leader>L        <C-w>L
+
 " change global directory to basename of current file
 nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
