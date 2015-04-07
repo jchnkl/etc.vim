@@ -205,11 +205,16 @@ set incsearch
 " on, use CTRL-V<Tab>.
 set expandtab
 
+" Number of spaces that a <Tab> in the file counts for.
+set tabstop=2
+
 " Number of spaces to use for each step of (auto)indent.
-set shiftwidth=2
+" shiftwidth = 0 should automatically use tabstop. However, this break
+" the vim-indent-guides plugin. This is a workaround.
+let &shiftwidth=&tabstop
 
 " Number of spaces that a <Tab> counts for while performing editing
-" operations, like inserting a <Tab> or using <BS>.
+" operations, like inserting a <Tab> or using <BS>. (0 disables)
 set softtabstop=2
 
 " When on, the title of the window will be set to the value of
