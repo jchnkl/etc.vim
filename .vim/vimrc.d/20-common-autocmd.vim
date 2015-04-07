@@ -66,4 +66,7 @@ if has("autocmd")
     autocmd FileType    mail abbreviate jr Jochen
     autocmd FileType    mail abbreviate jrk Jochen Keil
 
+    if executable('pointfree')
+        autocmd BufEnter *.hs set formatprg=xargs\ -0\ pointfree
+    endif
 endif
