@@ -58,6 +58,16 @@ nnoremap <silent> <Leader>J        <C-w>J
 nnoremap <silent> <Leader>K        <C-w>K
 nnoremap <silent> <Leader>L        <C-w>L
 
+" Allow saving of files as sudo when I forgot to start vim using sudo.
+function! SudoWrite ()
+  let save_cursor = getpos(".")
+  %!sudo tee > /dev/null %
+  e!
+  call setpos('.', save_cursor)
+endfunction
+
+command! SudoWrite call SudoWrite()
+
 " change global directory to basename of current file
 nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
