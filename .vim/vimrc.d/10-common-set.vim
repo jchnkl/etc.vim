@@ -123,8 +123,9 @@ set scrolloff=5
 set list
 
 " Strings to use in 'list' mode and for the |:list| command.  It is a
-" comma separated list of string settings.
-set listchars=trail:·,tab:▷·,precedes:«,extends:»
+" comma separated list of string settings. eol: ^Vu21B5 (unicode)
+set listchars=trail:·,tab:▷·,precedes:«,extends:»,eol:↵
+
 
 " The minimal number of columns to scroll horizontally.  Used only when
 " the 'wrap' option is off and the cursor is moved off of the screen.
