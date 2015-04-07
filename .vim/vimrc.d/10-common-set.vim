@@ -43,7 +43,7 @@ set viminfo='20,\"50
 
 " A history of ":" commands, and a history of previous search patterns
 " are remembered.
-set history=50
+set history=1000
 
 " Write the contents of the file, if it has been modified, on each
 " :next, :rewind, :last, :first, :previous, :stop, :suspend, :tag, :!,
