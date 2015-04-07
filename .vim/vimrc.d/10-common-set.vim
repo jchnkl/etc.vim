@@ -2,6 +2,11 @@
 " make Vim behave in a more useful way.
 set nocompatible
 
+" Use visual bell instead of beeping.  The terminal code to display the visual
+" bell is given with 't_vb'.  When no beep or flash is wanted,
+" use ":set vb t_vb=".
+set visualbell t_vb=
+
 " Enables the reading of .vimrc, .exrc and .gvimrc in the current
 " directory.
 set exrc
