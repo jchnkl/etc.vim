@@ -82,7 +82,7 @@ noremap           <C-j>         <C-w>j
 noremap           <C-k>         <C-w>k
 noremap           <C-l>         <C-w>l
 
-nnoremap <silent> <Leader>s     :setlocal spell<CR>
+nnoremap <silent> <Leader>ss    :setlocal spell<CR>
                                \:setlocal spelllang=de_20,en<CR>
 nnoremap <silent> <Leader>sc    :tabe<CR>:setlocal buftype=nofile<CR>
                                \:setlocal bufhidden=hide<CR>
