@@ -303,6 +303,18 @@ if has("gui_gtk2")
                 \,sm:block-Cursor,a:blinkon0
 endif
 
+" help tex-slow
+" If you have a slow computer, you may wish to reduce the values
+syn sync maxlines=200
+syn sync minlines=50
+
+" Maximum column in which to search for syntax items.  In long lines the
+" text after this column is not highlighted and following lines may not
+" be highlighted correctly, because the syntax state is cleared.
+" This helps to avoid very slow redrawing for an XML file that is one
+" long line.
+set synmaxcol=120
+
 " The ":syntax enable" command will keep your current color settings.  This
 " allows using ":highlight" commands to set your preferred colors before or
 " after using this command.  If you want Vim to overrule your settings with the
