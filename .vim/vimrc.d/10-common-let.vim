@@ -2,6 +2,8 @@
 " for os specific settings; strip newline
 let os = substitute(system('uname -s'),"\n","","")
 
+let mapleader = "\<Space>"
+
 let v:fcs_choice = "ask"
 
 let g:netrw_liststyle=3
