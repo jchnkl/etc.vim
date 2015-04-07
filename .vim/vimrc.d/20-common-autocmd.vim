@@ -5,6 +5,8 @@ if has("autocmd")
     autocmd BufEnter    *    if &buftype == 'quickfix' | setlocal wrap | endif
     autocmd BufWinEnter *    if &buftype == 'quickfix' | setlocal wrap | endif
 
+    autocmd VimResized  *    wincmd =
+
     " set height of previewwindow to current winheight / 2
     autocmd WinEnter    *    let &previewheight = winheight ( 0 ) / 2
     autocmd VimEnter    *    let &previewheight = winheight ( 0 ) / 2
