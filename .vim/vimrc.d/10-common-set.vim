@@ -233,7 +233,7 @@ set relativenumber
 
 " This option controls the behavior when switching between buffers.
 " Possible values (comma separated list): useopen, usetab, split, newtab
-set switchbuf=useopen,usetab
+set switchbuf=useopen,usetab,newtab
 
 " The kind of folding used for the current window.
 set foldmethod=syntax
