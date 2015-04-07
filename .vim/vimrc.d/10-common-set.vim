@@ -134,6 +134,12 @@ set showbreak=↳\
 "  	lines.
 set cpoptions+=n
 
+" When this option is set, the screen will not be redrawn while
+" executing macros, registers and other commands that have not been
+" typed.  Also, updating the window title is postponed.  To force an
+" update use |:redraw|.
+set lazyredraw
+
 " The minimal number of columns to scroll horizontally.  Used only when
 " the 'wrap' option is off and the cursor is moved off of the screen.
 set sidescroll=5
