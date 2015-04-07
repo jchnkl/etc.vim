@@ -129,6 +129,11 @@ set listchars=trail:·,tab:▷·,precedes:«,extends:»,eol:↵
 " String to put at the start of lines that have been wrapped.
 set showbreak=↳\ 
 
+" n	When included, the column used for 'number' and
+"  	'relativenumber' will also be used for text of wrapped
+"  	lines.
+set cpoptions+=n
+
 " The minimal number of columns to scroll horizontally.  Used only when
 " the 'wrap' option is off and the cursor is moved off of the screen.
 set sidescroll=5
