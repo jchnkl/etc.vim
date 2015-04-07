@@ -158,6 +158,19 @@ set previewheight=20
 "       2: always
 set laststatus=2
 
+" When 'wildmenu' is on, command-line completion operates in an enhanced
+" mode.  On pressing 'wildchar' (usually <Tab>) to invoke completion,
+" the possible matches are shown just above the command line, with the
+" first match highlighted (overwriting the status line, if there is
+" one).  Keys that show the previous/next match, such as <Tab> or
+" CTRL-P/CTRL-N, cause the highlight to move to the appropriate match.
+set wildmenu
+
+" Completion mode that is used for the character specified with
+" 'wildchar'.  It is a comma separated list of up to four parts.  Each
+" part specifies what to do for each consecutive use of 'wildchar'.
+set wildmode=list:full
+
 " A list of file patterns.  A file that matches with one of these
 " patterns is ignored when completing file or directory names, and
 " influences the result of |expand()|, |glob()| and |globpath()| unless
