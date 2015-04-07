@@ -225,7 +225,7 @@ set title titlestring=vi:%t
 set numberwidth=2
 
 " Print the line number in front of each line.
-" set number
+set number
 
 " Show the line number relative to the line with the cursor in front of each
 " line.
