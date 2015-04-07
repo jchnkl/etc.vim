@@ -289,7 +289,7 @@ set printdevice=hplj4l
 
 if has("gui_gtk2")
     " This is a list of fonts which will be used for the GUI version of Vim.
-    set guifont=Terminus\ 6
+    set guifont=Terminus\ 8
 
     " This option only has an effect in the GUI version of Vim.  It is a
     " sequence of letters which describes what components and options of the
