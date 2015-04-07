@@ -18,6 +18,13 @@ nnoremap <silent> <F2>          :wa<Bar>exe "mksession! " . v:this_session<CR>
 nnoremap <silent> <C-n>         gt
 nnoremap <silent> <C-p>         gT
 
+nmap <silent> <F12> :!find $(pwd)
+      \ -name '*.py' -o -name '*.java'
+      \ -o -iname '*.[CH]' -o -name '*.cpp' -o -name '*.cc' -o -name '*.hpp'
+      \ > cscope.files<CR>
+      \ :!cscope -q -b -i cscope.files -f cscope.out<CR>
+      \ :cs reset<CR>
+
 nnoremap <silent> <Leader><Leader> q:
 nnoremap <silent> <Leader>a        :b#<CR>
 nnoremap <silent> <Leader>w        :w!<CR>
