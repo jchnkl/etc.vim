@@ -247,6 +247,8 @@ if version >= 703
     " highlighted with ColorColumn |hl-ColorColumn|.  Useful to align
     " text.  Will make screen redrawing slower.
     " set colorcolumn=80
+    " http://blog.hanschen.org/2012/10/24/different-background-color-in-vim-past-80-columns/
+    execute "set colorcolumn=" . join(range(81,335), ',')
 endif
 
 " Highlight the screen line of the cursor with CursorLine |hl-CursorLine|.
