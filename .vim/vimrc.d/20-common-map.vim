@@ -99,9 +99,3 @@ command DiffOrig
 nnoremap <silent> <Leader>cn :cn<CR>
 
 " center search results
-nnoremap          n             nzz
-nnoremap          N             Nzz
-nnoremap          *             *zz
-nnoremap          #             #zz
-nnoremap          g*            g*zz
-nnoremap          g#            g#zz
