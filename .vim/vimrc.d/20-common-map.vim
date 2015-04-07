@@ -93,6 +93,9 @@ nnoremap <silent> <Leader>sc    :tabe<CR>:setlocal buftype=nofile<CR>
 nnoremap          gf            :e <cfile><CR>
 nnoremap          <C-W>gf       :tabe <cfile><CR>
 
+command DiffOrig
+  \ vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+
 " center search results
 nnoremap          n             nzz
 nnoremap          N             Nzz
