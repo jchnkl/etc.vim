@@ -96,6 +96,8 @@ nnoremap          <C-W>gf       :tabe <cfile><CR>
 command DiffOrig
   \ vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
 
+nnoremap <silent> <Leader>cn :cn<CR>
+
 " center search results
 nnoremap          n             nzz
 nnoremap          N             Nzz
