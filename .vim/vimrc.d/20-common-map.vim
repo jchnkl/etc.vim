@@ -71,7 +71,6 @@ command! SudoWrite call SudoWrite()
 " change global directory to basename of current file
 nnoremap <silent> <Leader>c     :cd %:h<CR>
 " change current buffer directory to basename of current file
-nnoremap <silent> <Leader>lc    :lcd %:h<CR>
 
 " useful when line wrapping is enabled
 nnoremap          j             gj
