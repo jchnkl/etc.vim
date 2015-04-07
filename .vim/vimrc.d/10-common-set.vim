@@ -270,6 +270,16 @@ set completeopt=menu
 " modelines.
 set modeline
 
+" Changes the effect of the |:mksession| command.  It is a comma separated
+" list of words.  Each word enables saving and restoring something:
+" default: "blank,buffers,curdir,folds,help,options,tabpages,winsize"
+set sessionoptions-=options
+
+" Changes the effect of the |:mkview| command.  It is a comma separated
+" list of words.  Each word enables saving and restoring something:
+" default: "folds,options,cursor"
+set viewoptions-=options
+
 " A comma separated list of word list names.  When the 'spell' option is
 " on spellchecking will be done for these languages.
 set spelllang=de_20,en
