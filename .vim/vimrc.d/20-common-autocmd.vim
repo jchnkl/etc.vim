@@ -51,6 +51,9 @@ if has("autocmd")
 
     autocmd BufNewFile, BufRead *.cl set filetype=opencl
 
+    autocmd FileType    python setlocal foldmethod=indent
+    autocmd FileType    python setlocal foldlevel=99
+
     autocmd FileType    *tex setlocal spell
     autocmd FileType    *tex set grepprg=grep\ -nH\ $*
     autocmd FileType    *tex let g:tex_flavor = "latex"
