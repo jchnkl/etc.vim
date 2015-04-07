@@ -2,8 +2,8 @@
 vnoremap          p             <Esc>:let current_reg = @"<CR>gvdi<C-R>
                                \=current_reg<CR><Esc>
 
-" [33~ (F19) is bound to C-Tab for urxvt in .Xresources
-set <F19>=[33~
+" [32~ (F18) is bound to C-Tab for urxvt in .Xresources
+set <F18>=[32~
 " [34~ (F20) is bound to C-BackSpace for urxvt in .Xresources
 set      <F20>=[34~
 inoremap <silent> <F20>         <C-W>
