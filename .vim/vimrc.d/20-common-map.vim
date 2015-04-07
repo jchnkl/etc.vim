@@ -9,8 +9,11 @@ set      <F20>=[34~
 inoremap <silent> <F20>         <C-W>
 lnoremap <silent> <F20>         <C-W>
 cnoremap <silent> <F20>         <C-W>
-imap     <silent> <S-Insert>    <MiddleMouse>
-nnoremap <silent> <S-Insert>    "*p
+" imap     <silent> <S-Insert>    <MiddleMouse>
+" http://stackoverflow.com/questions/2555559/vim-pasting-from-clipboard-and-automatically-toggling-set-paste
+" inoremap <silent> <S-Insert>    <ESC>"+p`]a
+" nnoremap <silent> <S-Insert>    "*p
+" inoremap <S-Insert> :set paste<Enter>+:set nopaste<Enter>
 nnoremap <silent> <F2>          :wa<Bar>exe "mksession! " . v:this_session<CR>
 nnoremap <silent> <C-n>         gt
 nnoremap <silent> <C-p>         gT
