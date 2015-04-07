@@ -126,6 +126,8 @@ set list
 " comma separated list of string settings. eol: ^Vu21B5 (unicode)
 set listchars=trail:·,tab:▷·,precedes:«,extends:»,eol:↵
 
+" String to put at the start of lines that have been wrapped.
+set showbreak=↳\ 
 
 " The minimal number of columns to scroll horizontally.  Used only when
 " the 'wrap' option is off and the cursor is moved off of the screen.
