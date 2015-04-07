@@ -49,6 +49,8 @@ if has("autocmd")
     autocmd VimEnter COMMIT_EDITMSG setlocal filetype=gitcommit
     autocmd FileType      gitcommit setlocal spell
 
+    autocmd BufNewFile, BufRead *.cl set filetype=opencl
+
     autocmd FileType    *tex setlocal spell
     autocmd FileType    *tex set grepprg=grep\ -nH\ $*
     autocmd FileType    *tex let g:tex_flavor = "latex"
