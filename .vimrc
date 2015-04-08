@@ -21,10 +21,10 @@ let s:scripts =
 " 50-CommandT.vim
 " 50-vala.vim
 
-let s:scriptdir = 'vimrc.d'
+set runtimepath+=~/.vim/vimrc.d
 
 for s:script in s:scripts
-    execute 'runtime!' s:scriptdir . '/' . s:script
+    execute 'runtime!' s:script
 endfor
 
 let s:bundledir = 'bundle.d'
