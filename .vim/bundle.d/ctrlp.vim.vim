@@ -24,3 +24,5 @@ let g:ctrlp_user_command = {
       \ },
           \ 'fallback': 'find %s -type f'
       \ }
+
+autocmd ShellCmdPost,BufWritePre *   :CtrlPClearCache
