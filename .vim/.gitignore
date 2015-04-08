@@ -1,6 +1,0 @@
-*.swp
-doc
-view
-haddock_index.vim
-haskellmode.config
-.netrwhist
