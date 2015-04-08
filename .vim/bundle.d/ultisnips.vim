@@ -1,1 +1,1 @@
-let g:UltiSnipsExpandTrigger = '<F19>'
+let g:UltiSnipsExpandTrigger = '<F18>'
