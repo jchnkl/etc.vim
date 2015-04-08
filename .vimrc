@@ -9,10 +9,10 @@ let s:scripts =
 \ , '30-NextClosedFold.vim'
 \ , '30-ScrollToPercent.vim'
 \ , '30-TabLine.vim'
+\ , '30-colorscheme.vim'
 \ , '30-cscope_maps.vim'
 \ , '30-man.vim'
 \ , '30-vsearch.vim'
-\ , 'colorscheme.vim'
 \ ]
 
 set runtimepath+=~/.vim/vimrc.d
