@@ -13,8 +13,6 @@ let s:scripts =
 \ , '30-man.vim'
 \ , '30-vsearch.vim'
 \ , 'colorscheme.vim'
-\ , 'vala.vim'
-\ , 'vimlatex.vim'
 \ ]
 
 set runtimepath+=~/.vim/vimrc.d
