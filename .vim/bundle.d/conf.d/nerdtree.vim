@@ -1,1 +1,0 @@
-../avail.d/nerdtree.vim
