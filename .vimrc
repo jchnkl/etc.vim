@@ -17,10 +17,6 @@ let s:scripts =
 \ , 'vimlatex.vim'
 \ ]
 
-" 50-buftabs.vim
-" 50-CommandT.vim
-" 50-vala.vim
-
 set runtimepath+=~/.vim/vimrc.d
 
 for s:script in s:scripts
