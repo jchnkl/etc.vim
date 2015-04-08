@@ -31,7 +31,6 @@ let g:pathogen_disabled =
 \ + [ 'vim-marching' ]
 \ + [ 'vim-autoformat' ]
 \ + [ 'YouCompleteMe' ]
-\ + [ 'vim-gtrans' ]
 
 runtime! bundle/vim-pathogen/autoload/pathogen.vim
 
