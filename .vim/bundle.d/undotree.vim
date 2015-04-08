@@ -1,1 +1,1 @@
-nnoremap <silent> <Leader>ut :UndotreeToggle<CR>
+nnoremap <silent> <F10> :UndotreeToggle<CR>
