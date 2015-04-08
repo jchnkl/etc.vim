@@ -104,6 +104,6 @@ let g:pathogen_disabled =
 
 runtime! bundle/vim-pathogen/autoload/pathogen.vim
 
-call pathogen#infect('~/.vim/bundle/{}')
+execute pathogen#infect()
 
 Helptags
