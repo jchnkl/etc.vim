@@ -1,0 +1,1 @@
+../avail.d/40-vsearch.vim
