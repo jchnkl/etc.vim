@@ -1,0 +1,1 @@
+../avail.d/ghcmod-vim.vim

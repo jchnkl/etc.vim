@@ -1,0 +1,1 @@
+../avail.d/neocomplete.vim

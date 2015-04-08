@@ -1,0 +1,1 @@
+../avail.d/vim-fugitive.vim

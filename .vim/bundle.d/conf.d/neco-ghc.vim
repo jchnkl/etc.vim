@@ -1,0 +1,1 @@
+../avail.d/neco-ghc.vim
