@@ -27,11 +27,8 @@ for s:script in s:scripts
     execute 'runtime!' s:script
 endfor
 
-let s:bundledir = 'bundle.d'
+set runtimepath+=~/.vim/bundle.d
 
 for s:bundle in map(split(&runtimepath, ","), 'fnamemodify(v:val, ":t")')
-    let s:cfgfile = s:bundledir . '/' . s:bundle
-    if filereadable(s:cfgfile)
-        execute 'runtime!' s:cfgfile
-    endif
+    execute 'runtime!' s:bundle . '.vim'
 endfor
