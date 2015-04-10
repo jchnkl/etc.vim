@@ -65,8 +65,8 @@
 !/.vim/vimrc.d/avail.d/40-NextClosedFold.vim
 !/.vim/vimrc.d/avail.d/40-ScrollToPercent.vim
 !/.vim/vimrc.d/avail.d/40-Statusline.vim
-!/.vim/vimrc.d/avail.d/40-TabLine.vim
 !/.vim/vimrc.d/avail.d/40-vsearch.vim
+!/.vim/vimrc.d/avail.d/50-TabLine.vim
 !/.vim/vimrc.d/conf.d
 !/.vim/vimrc.d/conf.d/10-pathogen.vim
 !/.vim/vimrc.d/conf.d/20-common-let.vim
@@ -81,6 +81,6 @@
 !/.vim/vimrc.d/conf.d/40-NextClosedFold.vim
 !/.vim/vimrc.d/conf.d/40-ScrollToPercent.vim
 !/.vim/vimrc.d/conf.d/40-Statusline.vim
-!/.vim/vimrc.d/conf.d/40-TabLine.vim
 !/.vim/vimrc.d/conf.d/40-vsearch.vim
+!/.vim/vimrc.d/conf.d/50-TabLine.vim
 !/.virc
