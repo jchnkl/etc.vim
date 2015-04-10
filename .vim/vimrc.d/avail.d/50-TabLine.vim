@@ -79,10 +79,10 @@ function! MyTabLine()
 endfunction
 
 " set showtabline=1
-highlight! TabNum term=bold,underline cterm=bold,underline ctermfg=1 ctermbg=7 gui=bold,underline guibg=LightGrey
-highlight! TabNumSel term=bold,reverse cterm=bold,reverse ctermfg=1 ctermbg=7 gui=bold
-highlight! WinNum term=bold,underline cterm=bold,underline ctermfg=11 ctermbg=7 guifg=DarkBlue guibg=LightGrey
-highlight! WinNumSel term=bold cterm=bold ctermfg=7 ctermbg=14 guifg=DarkBlue guibg=LightGrey
+highlight! TabNum term=bold,underline cterm=bold,underline ctermfg=Red ctermbg=LightGray gui=bold,underline guibg=LightGrey
+highlight! TabNumSel term=bold,reverse cterm=bold,reverse ctermfg=Red ctermbg=White gui=bold
+highlight! WinNum term=bold,underline cterm=bold,underline ctermfg=DarkGray ctermbg=LightGray guifg=DarkBlue guibg=LightGrey
+highlight! WinNumSel term=bold,reverse cterm=bold,reverse ctermfg=Cyan ctermbg=White guifg=DarkBlue guibg=LightGrey
 
 set tabline=%!MyTabLine()
 
