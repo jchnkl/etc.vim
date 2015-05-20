@@ -1,3 +1,7 @@
+" Undo maps from /etc/vimrc
+unmap <Esc>[3~
+unmap! <Esc>[3~
+
 " Make p in Visual mode replace the selected text with the "" register.
 vnoremap          p             <Esc>:let current_reg = @"<CR>gvdi<C-R>
                                \=current_reg<CR><Esc>
