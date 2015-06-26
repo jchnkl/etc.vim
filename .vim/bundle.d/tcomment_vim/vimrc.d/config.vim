@@ -1,4 +1,3 @@
-let g:tcommentMaps = 0
 let g:tcommentLineC = tcomment#GetCommentDef('cpp')
 call tcomment#DefineType('c', g:tcommentLineC, {}, 1)
 
