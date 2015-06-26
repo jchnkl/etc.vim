@@ -48,3 +48,6 @@ let g:clang_complete_patterns = 0
 " includes in memory. Updates after changes in the same file will therefore be a
 " lot faster.
 let g:clang_use_library = 1
+
+" quick fix: https://github.com/Rip-Rip/clang_complete/issues/422
+autocmd VimEnter * let &term = &term
