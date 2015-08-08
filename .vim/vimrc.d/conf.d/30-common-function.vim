@@ -1,1 +1,0 @@
-../avail.d/30-common-function.vim

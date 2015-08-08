@@ -1,1 +1,0 @@
-../avail.d/20-common-set.vim

@@ -1,1 +1,0 @@
-../avail.d/40-cscope_maps.vim

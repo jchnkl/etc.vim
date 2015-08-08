@@ -1,4 +1,3 @@
-set runtimepath+=~/.vim/vimrc.d
-set runtimepath+=~/.vim/bundle
+set runtimepath+=~/.vim/bundle/*
 
-runtime! conf.d/*.vim
+runtime! vimrc.d/*.vim
