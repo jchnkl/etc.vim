@@ -1,1 +1,0 @@
-../avail.d/clang_complete.vim
