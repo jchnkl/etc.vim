@@ -1,3 +1,6 @@
+" Remember, remember, this is for openSUSE
+" sudo ln -s /usr/lib64/libclang.so{.3.6,}
+
 " Crashes (???) vim
 autocmd BufWritePost *.\(c\|h\)\(\|pp\) call g:ClangUpdateQuickFix()
 
