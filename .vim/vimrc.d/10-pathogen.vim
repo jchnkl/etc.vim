@@ -1,4 +1,4 @@
-let g:pathogen_disabled = []
+let g:pathogen_disabled = ['vim-gtrans']
 
 runtime! bundle/vim-pathogen/autoload/pathogen.vim
 
