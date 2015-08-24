@@ -53,4 +53,5 @@ let g:clang_complete_patterns = 0
 let g:clang_use_library = 1
 
 " quick fix: https://github.com/Rip-Rip/clang_complete/issues/422
-autocmd VimEnter * let &term = &term
+" disabled because it breaks x11 clipboards * and +
+" autocmd VimEnter * let &term = &term
