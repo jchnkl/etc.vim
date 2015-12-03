@@ -1,65 +1,69 @@
-" Use neocomplete.
-let g:neocomplete#enable_at_startup = 1
-" Use smartcase.
-let g:neocomplete#enable_smart_case = 1
-" Set minimum syntax keyword length.
-" let g:neocomplete#sources#syntax#min_keyword_length = 8
+if !has('nvim')
 
-let g:neocomplete#auto_completion_start_length = 0
-" let g:neocomplete#manual_completion_start_length = 1
+  " Use neocomplete.
+  let g:neocomplete#enable_at_startup = 1
+  " Use smartcase.
+  let g:neocomplete#enable_smart_case = 1
+  " Set minimum syntax keyword length.
+  " let g:neocomplete#sources#syntax#min_keyword_length = 8
 
-" Define keyword.
-if !exists('g:neocomplete#keyword_patterns')
-  let g:neocomplete#keyword_patterns = {}
-endif
-let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+  let g:neocomplete#auto_completion_start_length = 0
+  " let g:neocomplete#manual_completion_start_length = 1
 
-" <TAB>: completion.
-au CmdwinEnter * iunmap <buffer> <Tab>
-au CmdwinEnter * nunmap <buffer> <Tab>
+  " Define keyword.
+  if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+  endif
+  let g:neocomplete#keyword_patterns['default'] = '\h\w*'
 
-" returns true if character before cursor is ' ' or '\t'
-function! NoComplete()
-  let s:str = strpart(getline('.'), col('.')-2, 1)
-  return s:str =~ '\( \|\t\)' || strlen(s:str) == 0
-endfunction
+  " <TAB>: completion.
+  au CmdwinEnter * iunmap <buffer> <Tab>
+  au CmdwinEnter * nunmap <buffer> <Tab>
 
-inoremap <expr><TAB> pumvisible() ? "\<C-n>" :
-      \ (NoComplete() ? "\<Tab>" : neocomplete#start_manual_complete())
-inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
-inoremap <expr><BS> neocomplete#smart_close_popup() . "\<C-h>"
+  " returns true if character before cursor is ' ' or '\t'
+  function! NoComplete()
+    let s:str = strpart(getline('.'), col('.')-2, 1)
+    return s:str =~ '\( \|\t\)' || strlen(s:str) == 0
+  endfunction
 
-" Enable omni completion.
-autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
-autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
-autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
-autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+  inoremap <expr><TAB> pumvisible() ? "\<C-n>" :
+        \ (NoComplete() ? "\<Tab>" : neocomplete#start_manual_complete())
+  inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
+  inoremap <expr><BS> neocomplete#smart_close_popup() . "\<C-h>"
 
-" Enable heavy omni completion.
-if !exists('g:neocomplete#sources#omni#input_patterns')
-  let g:neocomplete#sources#omni#input_patterns = {}
-endif
-let g:neocomplete#sources#omni#input_patterns.php =
-      \ '[^. \t]->\h\w*\|\h\w*::'
-let g:neocomplete#sources#omni#input_patterns.c =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)'
-let g:neocomplete#sources#omni#input_patterns.cpp =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+  " Enable omni completion.
+  autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+  autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+  autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+  autocmd FileType python setlocal omnifunc=pythoncomplete#Complete
+  autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
 
-if !exists('g:neocomplete#force_omni_input_patterns')
-  let g:neocomplete#force_omni_input_patterns = {}
-endif
-let g:neocomplete#force_overwrite_completefunc = 1
-let g:neocomplete#force_omni_input_patterns.c =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)'
-let g:neocomplete#force_omni_input_patterns.cpp =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
-let g:neocomplete#force_omni_input_patterns.objc =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)'
-let g:neocomplete#force_omni_input_patterns.objcpp =
-      \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+  " Enable heavy omni completion.
+  if !exists('g:neocomplete#sources#omni#input_patterns')
+    let g:neocomplete#sources#omni#input_patterns = {}
+  endif
+  let g:neocomplete#sources#omni#input_patterns.php =
+        \ '[^. \t]->\h\w*\|\h\w*::'
+  let g:neocomplete#sources#omni#input_patterns.c =
+        \ '[^.[:digit:] *\t]\%(\.\|->\)'
+  let g:neocomplete#sources#omni#input_patterns.cpp =
+        \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
 
-autocmd FileType python setlocal omnifunc=jedi#complete
-let g:jedi#auto_vim_configuration = 0
-let g:neocomplete#force_omni_input_patterns.python = '[^. \t]\.\w*'
+  if !exists('g:neocomplete#force_omni_input_patterns')
+    let g:neocomplete#force_omni_input_patterns = {}
+  endif
+  let g:neocomplete#force_overwrite_completefunc = 1
+  let g:neocomplete#force_omni_input_patterns.c =
+        \ '[^.[:digit:] *\t]\%(\.\|->\)'
+  let g:neocomplete#force_omni_input_patterns.cpp =
+        \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+  let g:neocomplete#force_omni_input_patterns.objc =
+        \ '[^.[:digit:] *\t]\%(\.\|->\)'
+  let g:neocomplete#force_omni_input_patterns.objcpp =
+        \ '[^.[:digit:] *\t]\%(\.\|->\)\|\h\w*::'
+
+  autocmd FileType python setlocal omnifunc=jedi#complete
+  let g:jedi#auto_vim_configuration = 0
+  let g:neocomplete#force_omni_input_patterns.python = '[^. \t]\.\w*'
+
+endif " !has('nvim')
