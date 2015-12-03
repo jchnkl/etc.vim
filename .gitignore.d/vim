@@ -54,6 +54,9 @@
 !/.vim/bundle.d/vim-gtrans
 !/.vim/bundle.d/vim-gtrans/vimrc.d
 !/.vim/bundle.d/vim-gtrans/vimrc.d/config.vim
+!/.vim/bundle.d/vim-pathogen
+!/.vim/bundle.d/vim-pathogen/vimrc.d
+!/.vim/bundle.d/vim-pathogen/vimrc.d/config.vim
 !/.vim/bundle.d/vim-powerline
 !/.vim/bundle.d/vim-powerline/vimrc.d
 !/.vim/bundle.d/vim-powerline/vimrc.d/config.vim
@@ -69,7 +72,6 @@
 !/.vim/ftplugin/man.vim
 !/.vimrc
 !/.vim/vimrc.d
-!/.vim/vimrc.d/10-pathogen.vim
 !/.vim/vimrc.d/20-common-let.vim
 !/.vim/vimrc.d/20-common-set.vim
 !/.vim/vimrc.d/30-common-autocmd.vim
