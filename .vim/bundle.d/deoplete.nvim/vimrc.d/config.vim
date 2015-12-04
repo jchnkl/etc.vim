@@ -29,7 +29,6 @@ if has('nvim')
   inoremap <expr><TAB> pumvisible() ? "\<C-n>" :
         \ (NoComplete() ? "\<Tab>" : deoplete#start_manual_complete())
   inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<S-TAB>"
-  inoremap <expr><BS> deoplete#smart_close_popup() . "\<C-h>"
 
   " Enable omni completion.
   autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
