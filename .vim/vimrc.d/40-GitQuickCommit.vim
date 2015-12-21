@@ -59,7 +59,8 @@ def is_in_tree(base_dir, file, root):
         if os.path.join(base_dir, file) == os.path.join(base_dir, blob.name):
             return True
     for tree in root.trees:
-        return is_in_tree(os.path.join(base_dir, tree.name), file, tree)
+        if is_in_tree(os.path.join(base_dir, tree.name), file, tree):
+            return True
     return False
 ### def is_in_tree(base_dir, file, root):
 
