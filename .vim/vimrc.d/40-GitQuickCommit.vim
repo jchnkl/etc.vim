@@ -92,7 +92,7 @@ def commit():
     if not curfile:
         return
 
-    current_repo = git.Repo(curfile)
+    current_repo = git.Repo(curfile, search_parent_directories=True)
     # TODO: return if no changes
 
     if not is_in_tree(current_repo.working_dir,
