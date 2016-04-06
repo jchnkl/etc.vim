@@ -12,7 +12,7 @@ cnoremap <C-x> <C-b>fixup! <C-e>
 
 augroup GitQuickCommit
     autocmd!
-    autocmd BufWritePost * call GitQuickCommit()
+    " autocmd BufWritePost * call GitQuickCommit()
 augroup END
 
 " help :command-completion-custom
